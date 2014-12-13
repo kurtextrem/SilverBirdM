@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery-ui/jquery-ui.structure.min.css" />
+<link rel="stylesheet" href="css/jquery-ui/jquery-ui.theme.min.css" />
+<link rel="stylesheet" href="css/action_menu.css" />
+<link rel="stylesheet" href="css/simple_select.css" />
+<link rel="stylesheet" href="css/jquery.contextMenu.css" />
+<link id="base_stylesheet" rel="stylesheet" href="css/silm.theme.css" />
+<title>Silverbird M Popup</title>
+<script src="lib/popup/global.js"></script>
+<script src="lib/3rdparty/jquery-2.1.1.min.js"></script>
+<script src="lib/3rdparty/jquery-ui.min.js"></script>
+<script src="lib/3rdparty/jquery.contextMenu.js"></script>
+<script src="lib/3rdparty/jquery.insertatcaret.min.js"></script>
+<script src="lib/3rdparty/oauth.js"></script>
+<script src="lib/3rdparty/sha1.js"></script>
+<script src="lib/any_click.js"></script>
+<script src="lib/simple_select.js"></script>
+<script src="lib/action_menu.js"></script>
+<script src="lib/tweets_assembler.js"></script>
+<script src="lib/popup/my_oauth.js"></script>
+<script src="lib/popup/paginator.js"></script>
+<script src="lib/popup/theme_manager.js"></script>
+<script src="lib/popup/work_list.js"></script>
+<script src="lib/popup/composer.js"></script>
+<script src="lib/popup/shortener.js"></script>
+<script src="lib/popup/renderer.js"></script>
+<script src="lib/popup/lists.js"></script>
+<script src="lib/popup/context_menu.js"></script>
+<script src="lib/popup/confirm_dialog.js"></script>
+<script src="lib/popup/search_tab.js"></script>
+<script src="lib/popup/timeline_tab.js"></script>
+<script src="lib/popup/autocomplete.js"></script>
+<script src="lib/popup/image_upload.js"></script>
+<script src="lib/popup/popup_init.js"></script>
+</head>
+<body>
+<a style="position:absolute; left:-5000px;" href="">dummy</a>
+
+<div id="workspace" style="display: none;">
+  <div id="absolute_container">
+    <div id="warning">
+      <div class="img_area"><img src="img/warning.png" /></div>
+      <div class="dismiss">X</div>
+      <div class="content"></div>
+      <div style="clear: both;"></div>
+    </div>
+  </div>
+
+  <div id="compose_tweet_area" style="display: none;">
+    <textarea rows="4"></textarea>
+    <div id="shortener_area">
+      <input type="text" name="shortener_text">
+      <div id="shorten_current" class="i18n" title="Share current page"></div>
+      <div id="shortener_button"><span id="shortenIt" class="i18n"></span></div>
+    </div>
+    <div class="footer">
+      <input id="tweetit" class="i18n" type="button" value="Tweet!" />
+      <span id="upload_button_area">
+        <img id="attach_icon" src="img/attachment.png"><input id="image_input" type="file" name="media" accept="image/*" />
+      </span>
+      <progress id="upload_progress" max="100"></progress>
+      <span class="chars_left"></span>
+    </div>
+  </div>
+  <div id="compose_tweet">
+    <img class="left" src="img/arrow_down.gif"/><span id="composeTweet" class="i18n"></span><img class="right" src="img/arrow_down.gif"/>
+  </div>
+
+  <div>
+    <span class="header_link_left">
+      <a id="signout" href="#" class="i18n"></a> |
+      <a id="options_page_link" href="#" class="i18n msg-trigger-openoptions"></a> |
+      <a id="refresh_trigger" href="#" class="i18n"></a> |
+      <a id="trending_topics" href="#" class="i18n"></a> |
+      <a id="saved_searches" href="#" class="i18n"></a>
+    </span>
+    <span class="header_link_right">
+      <a id="suspend_trigger" href="#"><img id="suspend_status" src="img/timeline_suspended.png" class="i18n" title="Click to Resume" /></a>
+      <a id="stream_trigger" href="#"><img id="stream_status" src="img/stream_disconnected.png" class="i18n" title="Connect UserStream" /></a>
+      <a id="detach_trigger" href="#"><img id="detach_window" src="img/up_detach.png" class="i18n" title="Detach window" /></a>
+      <a id="twitter_link" href="#"><img id="view_twitter" src="img/twitter-bird-16x16.png" class="i18n" title="View Twitter" /></a>
+    </span>
+    <img src="img/loading.gif" id="loading" style="display: none;"/>
+    <img src="img/loading.gif" id="queue_loading" style="display: none;"/>
+  </div>
+
+  <div id="update_tweets"></div>
+  <div id="tabs"><ul></ul></div>
+</div>
+
+<div id="enter_pin" style="display: none;">
+  <img src="img/loading.gif" id="loading_oauth" style="display: none;"/>
+  <label for="pin">Twitter's OAuth Pin:</label>
+  <input type="text" name="pin"><br>
+  <input type="button" class="i18n" id="btnAuthorize" value="Authorize!">
+  <br><br>
+  <a href="#" id="newToken" class="i18n"></a>
+</div>
+<div id="error_pin" style="display: none;"></div>
+
+<ul id="tab_context_menu" class="contextMenu"></ul>
+<div id="confirm_dialog" class="confirmDialog"></div>
+</body>
+</html>

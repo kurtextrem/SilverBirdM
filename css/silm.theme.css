@@ -1,0 +1,613 @@
+html, body {
+  font-family: Helvetica, Arial, sans-serif, 'Segoe UI Symbol', 'Apple Color Emoji', Symbola;
+  font-style: normal;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 10pt;
+  overflow: hidden;
+}
+
+a {
+  color: #665;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input[type='text'] {
+  margin: 0;
+  border-radius: .4em;
+  background-color: #f2f2f2;
+  border: .1em solid #999;
+}
+
+#absolute_container {
+  position: absolute;
+  z-index: 999999;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+#warning {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px;
+  display: table;
+  background-color: #e5effe;
+  border: 2px solid #b4cff2;
+  border-top: 0;
+}
+
+#warning .img_area {
+  display: table-cell;
+  vertical-align: middle;
+  width: 32px;
+}
+
+#warning .content {
+  margin-left: 5px;
+}
+
+#warning .dismiss {
+  float: right;
+  cursor: pointer;
+  margin-top: -3px;
+  margin-right: -3px;
+  margin-left: 3px;
+  border: 1px solid #b4cff2;
+  padding: 0px 4px 0px 4px;
+}
+
+#enter_pin,
+#error_pin {
+  min-width: 300px;
+}
+
+#workspace {
+  margin: 0 4px 0 4px;
+  min-width: 440px;
+}
+
+.header_link_left {
+  float: left;
+  font-size: 8pt;
+  margin-top: 4px;
+}
+
+.header_link_right {
+  float: right;
+  font-size: 8pt;
+  margin-top: 4px;
+}
+
+.header_link_right #detach_window,
+.header_link_right #view_twitter {
+  width: 16px;
+  height: 16px;
+  margin: 0 2px;
+}
+
+#loading, #queue_loading {
+  float: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 5px;
+  padding-top: 6px;
+}
+
+.timeline div.ui-resizable-se {
+  bottom: -3px;
+  right: -3px;
+  width: 5px;
+  height: 5px;
+  background-image: none;
+}
+
+.inner_timeline {
+  margin: 0;
+  padding: 0;
+  padding-right: 35px;
+  overflow: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#update_tweets {
+  display: none;
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3px;
+  cursor: pointer;
+  clear: both;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #666;
+}
+
+#update_tweets:hover {
+  background-color: #646464;
+  color: white;
+}
+
+#shortener_area {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2px;
+}
+
+#shortener_area input {
+  width: 100%;
+  z-index: 999;
+}
+
+#shortener_button {
+  left: 50%;
+  position: absolute;
+  width: 100px;
+  padding: 1px;
+  margin-left: -51px;
+  border-bottom-left-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  background-color: #e5effe;
+  border: 1px solid #b4cff2;
+  border-top: 0px;
+  margin-top: -1px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+#shortener_button div:hover {
+  background-color: #f0f5fb;
+  border: 1px solid #c1cddc;
+  border-top: 0px;
+}
+
+#shorten_current {
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 4px;
+  margin-top: -16px;
+  cursor: pointer;
+  background: transparent url(../img/globe_blue.png) repeat-x 0 0;
+}
+
+#compose_tweet_area textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #c1c1c1;
+}
+
+#compose_tweet_area .footer .chars_left {
+  margin-top: 3px;
+  float: right;
+}
+
+#compose_tweet img {
+  margin-top: 3px;
+}
+
+#compose_tweet img.left {
+  float: left;
+  margin-left: 5px;
+}
+
+#compose_tweet img.right {
+  float: right;
+  margin-right: 5px;
+}
+
+#compose_tweet {
+  font-size: 9pt;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: 1px solid #b4b4b4;
+  padding: 3px;
+}
+
+#compose_tweet:hover {
+  background-color: #fbfbfb;
+  border: 1px solid #c1c1c1;
+}
+
+#tabs {
+  clear: both;
+}
+
+#tabs .timeline_tab input.search_selector {
+  width: 80px;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+#tabs .update_modifier {
+  border: 1px solid red !important;
+  border-bottom: none !important;
+}
+
+.tweet {
+  width: 100%;
+  margin: .2em .1em;
+}
+
+.tweet_overlay {
+  width: inherit;
+  border: .2em solid #e5e5e5;
+  border-radius: .4em;
+  padding: 0em 22px 2px .2em;
+  background-color: #f2f2f2;
+  min-width: 400px;
+  position: relative;
+  min-height: 4em;
+}
+
+.tweet .first_container {
+  width: inherit;
+}
+
+/* .tweet .profile_container */
+
+.tweet .profile_container {
+  margin: 0;
+  padding: 0;
+  border: none;
+  float: left;
+  padding-top: 5px;
+}
+
+.tweet .user {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tweet img.profile {
+  border: solid .1em #f2f2f2;
+  margin-right: 4px;
+  float: left;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tweet img.profile.icon_small {
+  width: 24px;
+  height: 24px;
+}
+
+.tweet img.profile.icon_normal {
+  width: 48px;
+  height: 48px;
+}
+
+.tweet img.profile.icon_large {
+  width: 73px;
+  height: 73px;
+}
+
+.tweet img.profile.icon_max {
+  width: 128px;
+  height: 128px;
+}
+
+.tweet img.profile.retweet_source.icon_small {
+  margin: 0 6px 6px 0;
+  width: 18px;
+  height: 18px;
+}
+
+.tweet img.profile.retweet_source.icon_normal {
+  margin: 0 10px 10px 0;
+  width: 40px;
+  height: 40px;
+}
+
+.tweet img.profile.retweet_source.icon_large {
+  margin: 0 16px 16px 0;
+  width: 60px;
+  height: 60px;
+}
+
+.tweet img.profile.retweet_source.icon_max {
+  margin: 0 32px 32px 0;
+  width: 100px;
+  height: 100px;
+}
+
+.tweet img.profile.retweet_retweeter.icon_small {
+  margin-bottom: -8px;
+  margin-right: -10px;
+  position: relative;
+  top: 10px;
+  left: -12px;
+  width: 14px;
+  height: 14px;
+}
+
+.tweet img.profile.retweet_retweeter.icon_normal {
+  margin-bottom: -20px;
+  margin-right: -22px;
+  position: relative;
+  top: 28px;
+  left: -24px;
+  width: 24px;
+  height: 24px;
+}
+
+.tweet img.profile.retweet_retweeter.icon_large {
+  margin-bottom: -30px;
+  margin-right: -32px;
+  position: relative;
+  top: 40px;
+  left: -34px;
+  width: 36px;
+  height: 36px;
+}
+
+.tweet img.profile.retweet_retweeter.icon_max {
+  margin-bottom: -48px;
+  margin-right: -64px;
+  position: relative;
+  top: 62px;
+  left: -66px;
+  width: 64px;
+  height: 64px;
+}
+
+/* .tweet .profile_container */
+
+/* .tweet .header_container */
+
+.tweet .header_container {
+  margin: 0 0 0 0;
+  vertical-align: top;
+  width: 100%;
+  max-height: 54px;
+  padding-top: 1px;
+}
+
+.tweet .primary_name,
+.tweet .secondary_name {
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.tweet .primary_name .user,
+.tweet .secondary_name .user {
+  word-wrap: normal;
+  line-height: 1;
+}
+
+.tweet .primary_name .user {
+  font-size: 9pt;
+}
+
+.tweet .secondary_name {
+  padding-left: 8px;
+}
+
+.tweet .secondary_name .user {
+  font-size: 8pt;
+}
+
+.tweet img.verified {
+  margin-top: -2px;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.tweet img.protected {
+  margin: 0 0.5em;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* .tweet .header_container */
+
+/* .tweet .text_container */
+
+.tweet .text_container {
+  word-wrap: break-word;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  margin-left: 52px;
+  margin-top: -3px;
+}
+
+/* .tweet .text_container */
+
+/* .tweet .footer_container */
+
+.tweet .footer_container {
+  margin: -2px 0 0 0;
+  padding: 0;
+  position: relative;
+  font-size: 8pt;
+  color: #999;
+}
+
+.tweet .footer_container .inReply,
+.tweet .footer_container .inRetweet,
+.tweet .footer_container .selfRetweet,
+.tweet .footer_container .from_app,
+.tweet .footer_container .dm_recipient,
+.tweet .footer_container .geo_tag,
+.tweet .footer_container .from_list {
+  margin: auto 0 auto 1em;
+}
+
+.tweet .footer_container img.retweet {
+  margin: 0 2px;
+  padding: 0;
+  vertical-align: top;
+  max-width: 14px;
+  max-height: 14px;
+}
+
+/* .tweet .footer_container */
+
+/* .tweet .overlay */
+
+.tweet .new_actions {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  margin: auto 0;
+  padding: 0;
+}
+
+.tweet .new_actions img {
+  cursor: pointer;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tweet .new_actions img.starred {
+  display: inline;
+}
+
+/* .tweet .overlay */
+
+.tweet_space {
+  position: relative;
+}
+
+div.reply_separator {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-top: -10px;
+  margin-left: 13px; /* Half of the padding used for the actions */
+  cursor: pointer;
+}
+
+div.worklist_container {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+div.worklist_container .title {
+  color: #aaa;
+}
+
+div.worklist_container img {
+  margin-left: 5px;
+  vertical-align: bottom;
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+div.worklist_container img:hover {
+  opacity: 1;
+}
+
+ul.worklist {
+  padding: 0;
+  margin: 0;
+  padding-left: 5px;
+  text-align: left;
+  list-style-type: none;
+  display: block;
+}
+
+ul.worklist li {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+#upload_progress {
+  width: 120px;
+  display: none;
+}
+
+#attach_icon {
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+}
+
+/* override jQuery UI Structre*/
+
+.ui-tabs .ui-tabs-panel {
+  padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav {
+  padding: .1em 0 0;
+}
+
+.ui-tabs .ui-tabs-nav > li {
+  min-width: 6em;
+  margin: 1px 0 0;
+  text-align: center;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  padding: .2em .3em .1em;
+  float: initial;
+  display: block;
+}
+
+/* override jQuery UI Tooltip */
+
+.ui-tooltip {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-tooltip .ui-tooltip-content{
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 5px;
+  min-width: 50px;
+  max-width: 300px;
+  min-height: 1em;
+  max-height: 300px;
+  word-break: break-all;
+}
+
+.ui-tooltip img{
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: .8em;
+}
+
+/* override jQuery UI Dialog */
+.ui-dialog .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.ui-widget-content a {
+  color: #888;
+}
+
+div.simple_select .label {
+  border: 0;
+}

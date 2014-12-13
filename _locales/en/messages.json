@@ -1,0 +1,870 @@
+{
+  "extDescription": {
+    "message": "Silverbird M is a Twitter extension. Silverbird M is a fork of Silver Bird.",
+    "description": "Extension description"
+  },
+  "resetSize": {
+    "message": "Double click to reset size"
+  },
+  "composeTweet": {
+    "message": "Compose tweet",
+    "description": "Text for composing new tweet"
+  },
+  "composeTweet": {
+    "message": "Compose tweet",
+    "description": "Text for composing new tweet"
+  },
+  "closeComposeTweet": {
+    "message": "Close"
+  },
+  "tweetit": {
+    "message": "Tweet it!"
+  },
+  "signout": {
+    "message": "Log out",
+    "description": "The text for the logout link"
+  },
+  "options_page_link": {
+    "message": "Options",
+    "description": "Options link"
+  },
+  "refresh_trigger": {
+    "message": "Refresh",
+    "description": "Refresh link"
+  },
+  "suspend_status": {
+    "message": "Click to Resume"
+  },
+  "timeline_running": {
+    "message": "Click to Suspend"
+  },
+  "timeline_suspended": {
+    "message": "Click to Resume"
+  },
+  "remove_tab": {
+    "message": "Remove This Tab"
+  },
+  "hide_tab": {
+    "message": "Hide This Tab"
+  },
+  "notify": {
+    "message": "Toggle Notify"
+  },
+  "show_unified": {
+    "message": "Show Unified Tab"
+  },
+  "show_home": {
+    "message": "Show Home Tab"
+  },
+  "show_mentions": {
+    "message": "Show Mentions Tab"
+  },
+  "show_dms": {
+    "message": "Show DMs Tab"
+  },
+  "show_favorites": {
+    "message": "Show Favorite Tab"
+  },
+  "add_lists": {
+    "message": "Add List Tab"
+  },
+  "add_search": {
+    "message": "Add Search Tab"
+  },
+  "selectList": {
+    "message": "- Select a list -"
+  },
+  "w_Unified": {
+    "message": "Unified"
+  },
+  "w_Home": {
+    "message": "Home"
+  },
+  "w_DM": {
+    "message": "DMs"
+  },
+  "w_SentDM": {
+    "message": "Sent DMs"
+  },
+  "w_ReceivedDM": {
+    "message": "Received DMs"
+  },
+  "w_Favorites": {
+    "message": "Favorites"
+  },
+  "w_Lists": {
+    "message": "Lists"
+  },
+  "w_Search": {
+    "message": "Search"
+  },
+  "fromApp_prefix": {
+    "message": "from "
+  },
+  "fromApp_suffix": {
+    "message": ""
+  },
+  "inReply_prefix": {
+    "message": "in reply to "
+  },
+  "inReply_suffix": {
+    "message": ""
+  },
+  "sentTo_prefix": {
+    "message": "sent to "
+  },
+  "sentTo_suffix": {
+    "message": ""
+  },
+  "retweetedBy_prefix": {
+    "message": "retweeted by "
+  },
+  "retweetedBy_suffix": {
+    "message": ""
+  },
+  "retweetedByMe": {
+    "message": "retweeted by me"
+  },
+  "retweetedCount_prefix": {
+    "message": ""
+  },
+  "retweetedCount_suffix": {
+    "message": "persons retweet"
+  },
+  "unmarkFavorite": {
+    "message": "Unmark as favorite"
+  },
+  "markFavorite": {
+    "message": "Mark as favorite"
+  },
+  "Delete": {
+    "message": "Delete"
+  },
+  "deleteConfirm": {
+    "message": "Delete this message: "
+  },
+  "Yes": {
+    "message": "Yes"
+  },
+  "No": {
+    "message": "No"
+  },
+  "Reply": {
+    "message": "Reply"
+  },
+  "Retweet": {
+    "message": "Retweet"
+  },
+  "retweetConfirm": {
+    "message": "Retweet this message: "
+  },
+  "deleteRT": {
+    "message": "Undo Retweet"
+  },
+  "deleteRTConfirm": {
+    "message": "Undo this retweet: "
+  },
+  "oldRT": {
+    "message": "Share (old school RT)"
+  },
+  "newToken": {
+    "message": "Request another token"
+  },
+  "shortenerIdleString": {
+    "message": "Type a URL to make it shorter, or, click right here \u2192"
+  },
+  "tweet_singular": {
+    "message": "tweet"
+  },
+  "tweet_plural": {
+    "message": "tweets"
+  },
+  "newTweetsAvailable": {
+    "message": "$count$ more $tweets$ available. Update now.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "tweets": {
+        "content": "$2"
+      }
+    }
+  },
+  "preventClosing": {
+    "message": "Click to prevent closing."
+  },
+  "errorExpandingUrl": {
+    "message": "Sorry, something went wrong, please try again."
+  },
+  "ajaxFailed": {
+    "message": "AJAX request failed (bad connection?)"
+  },
+  "successAuth": {
+    "message": "Congratulations, you've been successfully authenticated. Enjoy Silverbird M!"
+  },
+  "cbAuthorized": {
+    "message": "Silverbird M authorized!"
+  },
+  "cbNotAuthorized": {
+    "message": "Oops... Something went wrong. Please, try clicking Silverbird M icon again."
+  },
+  "authorizing": {
+    "message": "Please wait, authorizing Silverbird M..."
+  },
+  "yourPIN": {
+    "message": "Your PIN number is: $pin$",
+    "placeholders": {
+      "pin":{
+        "content": "$1"
+      }
+    }
+  },
+  "tryAgain": {
+    "message": "Try again"
+  },
+  "canceling": {
+    "message": "Canceling..."
+  },
+  "cancelTweet": {
+    "message": "Cancel Tweet"
+  },
+  "queued_messages": {
+    "message": "Queued Messages:"
+  },
+  "queue_trying": {
+    "message": "trying to send for $timediff$",
+    "placeholders": {
+      "timediff": {
+        "content": "$1"
+      }
+    }
+  },
+  "queue_retried": {
+    "message": "retried $retries$ times since $timediff$ ago [$laststatus$]",
+    "placeholders": {
+      "retries": {
+        "content": "$1"
+      },
+      "timediff": {
+        "content": "$2"
+      },
+      "laststatus": {
+        "content": "$3"
+      }
+    }
+  },
+  "ue_updatingTweets": {
+    "message": "Unexpected error $baseError$ updating tweets.",
+    "placeholders": {
+      "baseError": {
+        "content": "$1"
+      }
+    }
+  },
+  "ue_updatingTweets_timeout": {
+    "message": "<br> If this timeout error is being shown repeatedly."
+  },
+  "ue_updatingTweets_noauthenticate": {
+    "message": "Fail to authenticate. If this error is displayed repeatedly, please try to signout."
+  },
+  "ue_updatingTweets_noresult": {
+    "message": "No search query, or No results"
+  },
+  "ue_updatingTweets_nofetched": {
+    "message": "<br> If no tweets is displayed repeatedly, please try to reload the Silverbird M."
+  },
+  "ue_deletingTweet": {
+    "message": "Unexpected error $status$ deleting tweet.",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "ue_retweeting": {
+    "message": "Unexpected error $status$ retweeting.",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "ue_markFavorite": {
+    "message": "Unexpected error $status$ marking as favorite.",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "ue_unmarkFavorite": {
+    "message": "Unexpected error $status$ unmarking as favorite.",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "newTweets": {
+    "message": "$count$ $newtweets$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "newtweets": {
+        "content": "$2"
+      }
+    }
+  },
+  "newtweets_singular": {
+    "message": "new tweet"
+  },
+  "newtweets_plural": {
+    "message": "new tweets"
+  },
+  "btnAuthorize": {
+    "message": "Authorize!"
+  },
+  "exceededAPIHits": {
+    "message": "You've exceeded API hits limit. Please review your refresh interval settings in the <a href='#' class=\"msg-trigger-openoptions\">options page</a>. Silverbird M won't update until $nextResetDate $nextResetTime$.",
+    "placeholders": {
+      "options_url": {
+        "content": "$1"
+      },
+      "nextResetDate": {
+        "content": "$2"
+      },
+      "nextResetTime": {
+        "content": "$3"
+      }
+    }
+  },
+  "warningAPIHits": {
+    "message": "Hey! Your remaining API hits are ending too fast.<br>Please review your refresh interval settings in the <a href='#' class=\"msg-trigger-openoptions\">options page</a>. Take special care if you're running multiple Twitter clients, as they all share the same limit.<br>Next hits reset: $nextResetDate$ $nextResetTime$",
+    "placeholders": {
+      "options_url": {
+        "content": "$1"
+      },
+      "nextResetDate": {
+        "content": "$2"
+      },
+      "nextResetTime": {
+        "content": "$3"
+      }
+    }
+  },
+  "oAuthError": {
+    "message": "The following error occurred trying to authenticate: $errorMessage$.",
+    "placeholders": {
+      "errorMessage": {
+        "content": "$1"
+      }
+    }
+  },
+  "justNow": {
+    "message": "just now"
+  },
+  "minuteAgo": {
+    "message": "less than 1 minute ago"
+  },
+  "minutes": {
+    "message": "$nr_of_minutes$ $minutes$ ago",
+    "placeholders": {
+      "nr_of_minutes":{
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2",
+        "example": "minute or minutes (singular / plural)"
+      }
+    }
+  },
+  "minute_singular": {
+    "message": "minute"
+  },
+  "minute_plural": {
+    "message": "minutes"
+  },
+  "timeAgo": {
+    "message": "about $time$ $time_string$ ago",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "time_string": {
+        "content": "$2"
+      }
+    }
+  },
+  "hour_singular": {
+    "message": "hour"
+  },
+  "hour_plural": {
+    "message": "hours"
+  },
+  "day_singular": {
+    "message": "day"
+  },
+  "day_plural": {
+    "message": "days"
+  },
+  "month_singular": {
+    "message": "month"
+  },
+  "month_plural": {
+    "message": "months"
+  },
+  "year_singular": {
+    "message": "year ago"
+  },
+  "year_plural": {
+    "message": "years ago"
+  },
+  "options_title": {
+    "message": "Silverbird M Options"
+  },
+  "conf_saved": {
+    "message": "Your configuration has been successfully saved!"
+  },
+  "changes_restart": {
+    "message": "Your configuration has been successfully saved! However, some of your changes require the extension to be restarted. Would you like to do it now? (This will reset your unread tweets count.)"
+  },
+  "g_ui": {
+    "message": "UI"
+  },
+  "l_name_attribute": {
+    "message": "Name in tweets"
+  },
+  "o_screen_name": {
+    "message": "Screen name (nickname)"
+  },
+  "o_name": {
+    "message": "Real name"
+  },
+  "o_both": {
+    "message": "Default"
+  },
+  "o_top": {
+    "message": "Top"
+  },
+  "o_bottom": {
+    "message": "Bottom"
+  },
+  "l_font_size": {
+    "message": "Font Size"
+  },
+  "o_small": {
+    "message": "Small"
+  },
+  "o_normal": {
+    "message": "Normal"
+  },
+  "o_large": {
+    "message": "Large"
+  },
+  "o_extra_large": {
+    "message": "Extra Large"
+  },
+  "l_font_family": {
+    "message": "Font Family"
+  },
+  "l_show_expanded_urls": {
+    "message": "Expand shortened URLs"
+  },
+  "l_reply_all": {
+    "message": "Reply to all mentioned"
+  },
+  "l_show_user_autocomplete": {
+    "message": "Autocomplete usernames"
+  },
+  "l_timeline_background_color": {
+    "message": "Timeline Background Color"
+  },
+  "w_Mentions": {
+    "message": "Mentions"
+  },
+  "btn_reset_popup_size": {
+    "message": "Reset Popup Size"
+  },
+  "g_notifications": {
+    "message": "Notifications"
+  },
+  "l_tweet_notification": {
+    "message": "Tweet Notification"
+  },
+  "notif_home": {
+    "message": "Home"
+  },
+  "notif_mentions": {
+    "message": "Mentions"
+  },
+  "notif_dms": {
+    "message": "DMs"
+  },
+  "notif_lists": {
+    "message": "Lists"
+  },
+  "notif_search": {
+    "message": "Search"
+  },
+  "notif_notification": {
+    "message": "Notification"
+  },
+  "l_tweets_notification_style": {
+    "message": "Notification Style"
+  },
+  "l_noti_never": {
+    "message": "Never"
+  },
+  "l_noti_desktop": {
+    "message": "Desktop Notifications"
+  },
+  "l_notification_fade_timeout": {
+    "message": "Notification Timeout (s)"
+  },
+  "l_notification_max_popups": {
+    "message": "Notifications at once (-1: all)"
+  },
+  "g_shortener": {
+    "message": "Shortener"
+  },
+  "l_url_shortener": {
+    "message": "URL Shortener"
+  },
+  "l_share_include_title": {
+    "message": "Include page title (sharing)"
+  },
+  "g_timelines": {
+    "message": "Timelines"
+  },
+  "l_visible": {
+    "message": "Visible"
+  },
+  "l_refresh_interval_seconds": {
+    "message": "Refresh Interval (s)"
+  },
+  "l_refresh_interval_minutes": {
+    "message": "Refresh Interval (m)"
+  },
+  "l_include_in_unified": {
+    "message": "Include in unified timeline"
+  },
+  "l_tabs_count": {
+    "message": "Tabs Count"
+  },
+  "l_unified_timeline": {
+    "message": "Unified Timeline"
+  },
+  "l_home_timeline": {
+    "message": "Home"
+  },
+  "l_mention_timeline": {
+    "message": "Mention"
+  },
+  "l_dms_timeline": {
+    "message": "DM"
+  },
+  "l_lists_timeline": {
+    "message": "Lists"
+  },
+  "l_search_timeline": {
+    "message": "Search"
+  },
+  "l_favorites_timeline": {
+    "message": "Favorites"
+  },
+  "l_notifications_timeline": {
+    "message": "Notifications"
+  },
+  "l_blocked_users": {
+    "message": "Blocked Users Retrieve Interval (min)"
+  },
+  "l_tweets_per_page": {
+    "message": "Tweets per Page"
+  },
+  "l_max_cached_tweets": {
+    "message": "Max Shown Tweets"
+  },
+  "g_advanced": {
+    "message": "Advanced"
+  },
+  "l_request_timeout": {
+    "message": "Request Timeout (ms)"
+  },
+  "btn_save": {
+    "message": "Save"
+  },
+  "btn_reset": {
+    "message": "Reset"
+  },
+  "btn_default": {
+    "message": "Reset to default"
+  },
+  "shortenIt": {
+    "message": "Shorten it!"
+  },
+  "shorten_current": {
+    "message": "Share current page"
+  },
+  "tweet_send_error": {
+    "message": "An error occurred while trying to send your tweet. Maybe Twitter is acting weird? You can try it again but please double check your account to prevent duplicated messages or overcount Twitter Max words."
+  },
+  "detach_window": {
+    "message": "Detach Window"
+  },
+  "follow_action": {
+    "message": "Follow"
+  },
+  "unfollow_action": {
+    "message": "Unfollow"
+  },
+  "tweets_action": {
+    "message": "Tweets"
+  },
+  "profile_action": {
+    "message": "Profile"
+  },
+  "add_mention_action": {
+    "message": "Mention"
+  },
+  "g_image_service": {
+    "message": "Image Service (deprecated)"
+  },
+  "l_image_up_service": {
+    "message": "Image Upload Service"
+  },
+  "trending_topics": {
+    "message": "Trends"
+  },
+  "g_trending_topics": {
+    "message": "Trending Topics" 
+  },
+  "l_trending_topics_woeid": {
+    "message": "Trending Topics Locale" 
+  },
+  "l_use_streaming_api": {
+    "message": "Use streaming API (experimental!)"
+  },
+  "block_action": {
+    "message": "Block"
+  },
+  "report_action": {
+    "message": "Report Spam"
+  },
+  "invalid_keys": {
+    "message": "You are using empty API keys. This is probably happening because you're running a development version.<br>You should register an application at http://dev.twitter.com and fill the API keys in the lib/secret_keys.js file."
+  },
+  "f_footer_list": {
+    "message": "List"
+  },
+  "request_token_error": {
+    "message": "Ouch... Something bad happened to Silverbird M while calling Twitter's API. Request token response: $errorMsg$ \n\nThis problem is probably due to incorrect date and time settings in your operating system or disconnected from internet. Please, review your settings and try again.",
+    "placeholders": {
+      "errorMsg": {
+        "content": "$1"
+      }
+    }
+  },
+  "saved_searches": {
+    "message" : "Saved Searches"
+  },
+  "saveSearch": {
+    "message" : "Save this query"
+  },
+  "deleteSearch": {
+    "message" : "Delete this query"
+  },
+  "updateLists": {
+    "message": "Update Lists"
+  },
+  "view_twitter": {
+    "message": "View Twitter.com"
+  },
+  "l_use_keyboard_shortcuts": {
+    "message": "Use Keyboard Shortcuts (experimental!)"
+  },
+  "undefined_message": {
+    "message": "UNDEFINED"
+  },
+  "l_compliant_twitter_display_requirements": {
+    "message": "Compliant Twitter Display Requirements"
+  },
+  "l_hidden_user_icons": {
+    "message": "Hidden User Icons"
+  },
+  "l_display_simple_name": {
+    "message": "Display Simple name"
+  },
+  "l_hidden_timestamp": {
+    "message": "Hidden Tiemstamp"
+  },
+  "l_hidden_footer": {
+    "message": "Hidden Footer"
+  },
+  "ue_expand_in_reply": {
+    "message": "That tweet is deleted, or this user probably is protected."
+  },
+  "l_hidden_reply_info": {
+    "message": "Hidden Reply Info"
+  },
+  "l_hidden_retweet_info": {
+    "message": "Hidden Retweet Info"
+  },
+  "l_hidden_client_name": {
+    "message": "Hidden Client Name"
+  },
+  "l_hidden_dm_info": {
+    "message": "Hidden DM Info"
+  },
+  "l_hidden_geo_info": {
+    "message": "Hidden Geo Info"
+  },
+  "l_hidden_list_info": {
+    "message": "Hidden List Info"
+  },
+  "l_trends_in_places": {
+    "message": "Trends in Places Retrieve Interval (min)"
+  },
+  "l_saved_searches": {
+    "message": "Saved Searches Retrieve Interval (min)"
+  },
+  "l_icon_size": {
+    "message": "Profile Icon Size"
+  },
+  "o_icon_small": {
+    "message": "Small"
+  },
+  "o_icon_normal": {
+    "message": "Normal"
+  },
+  "o_icon_large": {
+    "message": "Large"
+  },
+  "o_icon_max": {
+    "message": "Maximum"
+  },
+  "w_Notification": {
+    "message": "Notification"
+  },
+  "n_favorite": {
+    "message": "$source_screen_name$ favorites your tweet.",
+    "placeholders": {
+      "source_screen_name": {
+        "content": "$1"
+      }
+    }
+  },
+  "n_unfavorite": {
+    "message": "$source_screen_name$ unfavorites your tweet.",
+    "placeholders": {
+      "source_screen_name": {
+        "content": "$1"
+      }
+    }
+  },
+  "n_follow": {
+    "message": "$source_screen_name$ follows you.",
+    "placeholders": {
+      "source_screen_name": {
+        "content": "$1"
+      }
+    }
+  },
+  "n_list_member_added": {
+    "message": "$source_screen_name$ adds you to list.",
+    "placeholders": {
+      "source_screen_name": {
+        "content": "$1"
+      }
+    }
+  },
+  "n_ist_member_removed": {
+    "message": "$source_screen_name$ removes you from list.",
+    "placeholders": {
+      "source_screen_name": {
+        "content": "$1"
+      }
+    }
+  },
+  "n_list_user_subscribed": {
+    "message": "$source_screen_name$ subscribes your list.",
+    "placeholders": {
+      "source_screen_name": {
+        "content": "$1"
+      }
+    }
+  },
+  "n_list_user_unsubscribed": {
+    "message": "$source_screen_name$ unsubscribes your list.",
+    "placeholders": {
+      "source_screen_name": {
+        "content": "$1"
+      }
+    }
+  },
+  "c_search_on_silverbird_m": {
+    "message": "Search \"%s\" on Silverbird M"
+  },
+  "a_initial_fetch_error": {
+    "message": "fail to fetch necessary data for boot Silverbird M. your network or Twitter is probably down."
+  },
+  "a_initialization_is_not_finished": {
+    "message": "Initialization is not finished. Please try again later."
+  },
+  "ue_disable_dm": {
+    "message": "Direct messages tab have been disabled for now. This is happening because Twitter's denying access to them for some bizarre reason. You can try enabling them again in the options page."
+  },
+  "l_tweet_notificacion": {
+    "message": "Notify Tweets"
+  },
+  "l_timeline_display": {
+    "message": "Display Timelines"
+  },
+  "d_restart_immediately": {
+    "message": "Restart immediately"
+  },
+  "stream_status": {
+    "message": "Connect UserStream"
+  },
+  "stream_disconnected": {
+    "message": "Connect UserStream"
+  },
+  "stream_connected": {
+    "message": "Disconnect UserStream"
+  },
+  "worldwide": {
+    "message": "Worldwide"
+  },
+  "l_badge_only_for_notification": {
+    "message": "Badge only for Notifications"
+  },
+  "ue_unauthorized_user": {
+    "message": "That user probably is deleted or protected."
+  },
+  "extShortName": {
+    "message": "SilM"
+  },
+  "ue_wait_fetch_trends": {
+    "message": "Please wait $wait_minutes$ minutes",
+    "placeholders": {
+      "wait_minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "detach_window_for_upload": {
+    "message": "Detach window to upload images"
+  },
+  "mute_action": {
+    "message": "Mute"
+  },
+  "unmute_action": {
+    "message": "Unmute"
+  },
+  "ue_follows_over_limit": {
+    "message": "You have over 10000 folloing, and can not use user-streams."
+  },
+  "expanding_url": {
+    "message": "URL expanding..."
+  }
+}

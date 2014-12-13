@@ -1,0 +1,8 @@
+*.crx
+*.zip
+*.pem
+.DS_Store
+*.tmproj
+*~
+.redcar
+lib/secret_keys.js
