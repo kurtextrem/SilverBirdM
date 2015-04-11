@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css" media="screen, projection" />
   <link rel="stylesheet" href="css/options.css" />
   <link rel="stylesheet" href="css/colorpicker/colorpicker.css" />
-  <script src="lib/3rdparty/jquery-2.1.1.min.js"></script>
+  <script src="lib/3rdparty/jquery-2.1.3.min.js"></script>
   <script src="lib/3rdparty/bootstrap.min.js"></script>
   <script src="lib/3rdparty/colorpicker.js"></script>
   <script src="lib/options/global.js"></script>
@@ -154,16 +154,6 @@
       <div class="panel-heading">
         <h2 class="i18n panel-title" id="g_timelines">Timelines</h2>
       </div>
-      <div class="panel-body">
-        <div class="row form-group">
-          <div class="col-md-8"><label for="tweets_per_page" class="i18n" id="l_tweets_per_page">Tweets per Page</label></div>
-          <div class="col-md-4"><input type="text" class="form-control" name="tweets_per_page" validator="required,number,positive,maxTweetsPerRequest" must_restart /></div>
-        </div>
-        <div class="row form-group">
-          <div class="col-md-8"><label for="max_cached_tweets" class="i18n" id="l_max_cached_tweets">Max Shown Tweets</label></div>
-          <div class="col-md-4"><input type="text" class="form-control" name="max_cached_tweets" validator="required,number,positive,maxTweetsOnTimeline" must_restart /></div>
-        </div>
-      </div>
       <table class="table">
         <tr>
           <th colspan="5" class="i18n col-md-12" id="l_timeline_display">Display Timelines</th>
@@ -263,7 +253,7 @@
           <div class="col-md-4"><input type="radio" name="tweets_notification_style" value="never" id="noti_never"> <label for="noti_never" class="i18n" id="l_noti_never">Never</label></div>
           <div class="col-md-4"><input type="radio" name="tweets_notification_style" value="desktop" id="noti_desktop"> <label for="noti_desktop" class="i18n" id="l_noti_desktop">Desktop Notifications</label></div>
         </div>
-        <div id="notify_options">
+        <div class="notify_options">
           <div class="row form-group">
             <div class="col-md-8"><label for="notification_fade_timeout" class="i18n" id="l_notification_fade_timeout">Notification Timeout (s)</label></div>
             <div class="col-md-4"><input type="text" class="form-control" name="notification_fade_timeout" validator="required,number,positive" converter="RefreshInterval" /></div>
@@ -276,26 +266,26 @@
             <div class="col-md-8"><label for="badge_only_for_notification" class="i18n" id="l_badge_only_for_notification">Reply to all mentioned</label></div>
             <div class="col-md-4"><input type="checkbox" class="checkbox" id="badge_only_for_notification" name="badge_only_for_notification" /></div>
           </div>
-          <table class="table">
-            <tr>
-              <th class="col-md-2">&nbsp;</th>
-              <th class="i18n col-md-2" id="notif_home">Home</th>
-              <th class="i18n col-md-2" id="notif_mentions">Mentions</th>
-              <th class="i18n col-md-2" id="notif_dms">DMs</td>
-              <th class="i18n col-md-2" id="notif_lists">Lists</th>
-              <th class="i18n col-md-2" id="notif_search">Search</th>
-            </tr>
-            <tr>
-              <th class="i18n" id="l_tweet_notificacion">Tweet Notification</th>
-              <td><input type="checkbox" name="home_notify"></td>
-              <td><input type="checkbox" name="mentions_notify"></td>
-              <td><input type="checkbox" name="dms_notify"></td>
-              <td><input type="checkbox" name="lists_notify"></td>
-              <td><input type="checkbox" name="search_notify"></td>
-            </tr>
-          </table>
         </div>
       </div>
+      <table class="table notify_options">
+        <tr>
+          <th class="col-md-2">&nbsp;</th>
+          <th class="i18n col-md-2" id="notif_home">Home</th>
+          <th class="i18n col-md-2" id="notif_mentions">Mentions</th>
+          <th class="i18n col-md-2" id="notif_dms">DMs</td>
+          <th class="i18n col-md-2" id="notif_lists">Lists</th>
+          <th class="i18n col-md-2" id="notif_search">Search</th>
+        </tr>
+        <tr>
+          <th class="i18n" id="l_tweet_notificacion">Tweet Notification</th>
+          <td><input type="checkbox" name="home_notify"></td>
+          <td><input type="checkbox" name="mentions_notify"></td>
+          <td><input type="checkbox" name="dms_notify"></td>
+          <td><input type="checkbox" name="lists_notify"></td>
+          <td><input type="checkbox" name="search_notify"></td>
+        </tr>
+      </table>
     </div>
   </div>
   <div class="container">
@@ -311,19 +301,6 @@
         <div class="row form-group">
           <div class="col-md-8"><label for="share_include_title" class="i18n" id="l_share_include_title">Include page title (sharing)</label></div>
           <div class="col-md-4"><input type="checkbox" class="checkbox" name="share_include_title"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="i18n panel-title" id="g_image_service">Image Service (deprecated)</h2>
-      </div>
-      <div class="panel-body">
-        <div class="row form-group">
-          <div class="col-md-8"><label for="image_upload_service" class="i18n" id="l_image_up_service">Image Upload Service</label></div>
-          <div class="col-md-4"><select class="form-control" name="image_upload_service"></select></div>
         </div>
       </div>
     </div>
@@ -347,18 +324,6 @@
         <h2 class="i18n panel-title" id="g_advanced">Advanced</h2>
       </div>
       <div class="panel-body">
-        <div class="row form-group">
-          <div class="col-md-8"><label for="blocked_users" class="i18n" id="l_blocked_users">Blocked Users Retrieve Interval (min)</label></div>
-          <div class="col-md-4"><input type="text" class="form-control" name="blockedusers_refresh_interval" validator="required,number,positive,minAlarm" must_restart /></div>
-        </div>
-        <div class="row form-group">
-          <div class="col-md-8"><label for="trends_in_places" class="i18n" id="l_trends_in_places">Trends of places Retrieve Interval (min)</label></div>
-          <div class="col-md-4"><input type="text" class="form-control" name="trends_in_places" validator="required,number,positive,minAlarm" must_restart /></div>
-        </div>
-        <div class="row form-group">
-          <div class="col-md-8"><label for="saved_searches" class="i18n" id="l_saved_searches">Saved Searches Retrieve Interval (min)</label></div>
-          <div class="col-md-4"><input type="text" class="form-control" name="saved_searches" validator="required,number,positive,minAlarm" must_restart /></div>
-        </div>
         <div class="row form-group">
           <div class="col-md-8"><label for="request_timeout" class="i18n" id="l_request_timeout">Request Timeout (ms)</label></div>
           <div class="col-md-4"><input type="text" class="form-control" name="request_timeout" validator="required,number,positive" must_restart /></div>

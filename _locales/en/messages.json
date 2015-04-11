@@ -164,8 +164,8 @@
   "deleteRTConfirm": {
     "message": "Undo this retweet: "
   },
-  "oldRT": {
-    "message": "Share (old school RT)"
+  "quoteTweet": {
+    "message": "Quote Tweet"
   },
   "newToken": {
     "message": "Request another token"
@@ -326,32 +326,7 @@
     "message": "Authorize!"
   },
   "exceededAPIHits": {
-    "message": "You've exceeded API hits limit. Please review your refresh interval settings in the <a href='#' class=\"msg-trigger-openoptions\">options page</a>. Silverbird M won't update until $nextResetDate $nextResetTime$.",
-    "placeholders": {
-      "options_url": {
-        "content": "$1"
-      },
-      "nextResetDate": {
-        "content": "$2"
-      },
-      "nextResetTime": {
-        "content": "$3"
-      }
-    }
-  },
-  "warningAPIHits": {
-    "message": "Hey! Your remaining API hits are ending too fast.<br>Please review your refresh interval settings in the <a href='#' class=\"msg-trigger-openoptions\">options page</a>. Take special care if you're running multiple Twitter clients, as they all share the same limit.<br>Next hits reset: $nextResetDate$ $nextResetTime$",
-    "placeholders": {
-      "options_url": {
-        "content": "$1"
-      },
-      "nextResetDate": {
-        "content": "$2"
-      },
-      "nextResetTime": {
-        "content": "$3"
-      }
-    }
+    "message": "You've exceeded API hits limit. Some features are disabled. Please wait a moment."
   },
   "oAuthError": {
     "message": "The following error occurred trying to authenticate: $errorMessage$.",
@@ -576,9 +551,6 @@
   "l_notifications_timeline": {
     "message": "Notifications"
   },
-  "l_blocked_users": {
-    "message": "Blocked Users Retrieve Interval (min) (deprecated)"
-  },
   "l_tweets_per_page": {
     "message": "Tweets per Page (deprecated)"
   },
@@ -722,12 +694,6 @@
   "l_hidden_list_info": {
     "message": "Hidden List Info"
   },
-  "l_trends_in_places": {
-    "message": "Trends in Places Retrieve Interval (min) (deprecated)"
-  },
-  "l_saved_searches": {
-    "message": "Saved Searches Retrieve Interval (min) (deprecated)"
-  },
   "l_icon_size": {
     "message": "Profile Icon Size"
   },
@@ -845,12 +811,7 @@
     "message": "SilM"
   },
   "ue_wait_fetch_trends": {
-    "message": "Please wait $wait_minutes$ minutes",
-    "placeholders": {
-      "wait_minutes": {
-        "content": "$1"
-      }
-    }
+    "message": "Please wait 5 minutes"
   },
   "detach_window_for_upload": {
     "message": "Detach window to upload images"
@@ -866,5 +827,40 @@
   },
   "expanding_url": {
     "message": "URL expanding..."
+  },
+  "select_images_for_upload": {
+    "message": "Select Image"
+  },
+  "ue_too_big_image_size": {
+    "message": "This image is too big."
+  },
+  "ue_max_attached_images": {
+    "message": "Cannot attach any more."
+  },
+  "ue_media_upload_error": {
+    "message": "Error occurred when uploading image."
+  },
+  "quote_tweet_url": {
+    "message": "Quote to this tweet"
+  },
+  "quote_tweet_url": {
+    "message": "Quote to this tweet"
+  },
+  "l_quote_tweet_url": {
+    "message": "Quote to this tweet($url$)",
+    "placeholders": {
+      "url": {
+        "content": "$1"
+      }
+    }
+  },
+  "expand_quote_tweet": {
+    "message": "Expand the quote tweet"
+  },
+  "verified_account": {
+    "message": "Verified Account"
+  },
+  "protected_account": {
+    "message": "Protected Account"
   }
 }

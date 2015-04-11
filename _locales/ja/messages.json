@@ -322,32 +322,7 @@
     "message": "アクセス許可"
   },
   "exceededAPIHits": {
-    "message": "APIの回数制限に達してしまいました。<br><a href='#' class=\"msg-trigger-openoptions\">オプションページ</a>の更新間隔を見なおしてください。<br>Silverbird Mは $nextResetDate$ $nextResetTime$ までご利用いただけません。",
-    "placeholders": {
-      "options_url": {
-        "content": "$1"
-      },
-      "nextResetDate": {
-        "content": "$2"
-      },
-      "nextResetTime": {
-        "content": "$3"
-      }
-    }
-  },
-  "warningAPIHits": {
-    "message": "ご注意ください。APIの回数制限に到達しそうです。<br><a href='#' class=\"msg-trigger-openoptions\">オプションページ</a>の更新間隔を見なおしてください。<br>リセット予定時間: $nextResetDate$ $nextResetTime$",
-    "placeholders": {
-      "options_url": {
-        "content": "$1"
-      },
-      "nextResetDate": {
-        "content": "$2"
-      },
-      "nextResetTime": {
-        "content": "$3"
-      }
-    }
+    "message": "APIの回数制限に達してしまいました。しばらくの間、一部機能がご利用いただけません。"
   },
   "oAuthError": {
     "message": "アクセス許可確認中に以下のエラーが発生しました: $errorMessage$",
@@ -572,9 +547,6 @@
   "l_notifications_timeline": {
     "message": "通知"
   },
-  "l_blocked_users": {
-    "message": "ブロック済みユーザの取得間隔 (分) (廃止予定)"
-  },
   "l_tweets_per_page": {
     "message": "1ページ中のツイート数 (廃止予定)"
   },
@@ -718,12 +690,6 @@
   "l_hidden_list_info": {
     "message": "リスト情報を表示しない"
   },
-  "l_trends_in_places": {
-    "message": "地域のトレンドの取得間隔 (分) (廃止予定)"
-  },
-  "l_saved_searches": {
-    "message": "保存済み検索の取得間隔 (分) (廃止予定)"
-  },
   "l_icon_size": {
     "message": "プロフィールアイコンサイズ"
   },
@@ -841,15 +807,10 @@
     "message": "汁M"
   },
   "ue_wait_fetch_trends": {
-    "message": "$wait_minutes$分ほどお待ちください",
-    "placeholders": {
-      "wait_minutes": {
-        "content": "$1"
-      }
-    }
+    "message": "5分ほどお待ちください"
   },
   "detach_window_for_upload": {
-    "message": "画像を添付したいなら独立ウィンドウにしてください"
+    "message": "画像を追加するなら独立ウィンドウにしてください"
   },
   "mute_action": {
     "message": "ミュートする"
@@ -862,5 +823,17 @@
   },
   "expanding_url": {
     "message": "URL展開中..."
+  },
+  "select_images_for_upload": {
+    "message": "画像を追加"
+  },
+  "ue_too_big_image_size": {
+    "message": "画像サイズが大きすぎます。"
+  },
+  "ue_max_attached_images": {
+    "message": "これ以上画像を追加できません。"
+  },
+  "ue_media_upload_error": {
+    "message": "画像のアップロードに失敗しました。"
   }
 }

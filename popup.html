@@ -10,7 +10,7 @@
 <link id="base_stylesheet" rel="stylesheet" href="css/silm.theme.css" />
 <title>Silverbird M Popup</title>
 <script src="lib/popup/global.js"></script>
-<script src="lib/3rdparty/jquery-2.1.1.min.js"></script>
+<script src="lib/3rdparty/jquery-2.1.3.min.js"></script>
 <script src="lib/3rdparty/jquery-ui.min.js"></script>
 <script src="lib/3rdparty/jquery.contextMenu.js"></script>
 <script src="lib/3rdparty/jquery.insertatcaret.min.js"></script>
@@ -33,7 +33,6 @@
 <script src="lib/popup/search_tab.js"></script>
 <script src="lib/popup/timeline_tab.js"></script>
 <script src="lib/popup/autocomplete.js"></script>
-<script src="lib/popup/image_upload.js"></script>
 <script src="lib/popup/popup_init.js"></script>
 </head>
 <body>
@@ -42,27 +41,30 @@
 <div id="workspace" style="display: none;">
   <div id="absolute_container">
     <div id="warning">
-      <div class="img_area"><img src="img/warning.png" /></div>
-      <div class="dismiss">X</div>
-      <div class="content"></div>
+      <div id="warning_image"><img src="img/warning.png" /></div>
+      <div id="warning_dismiss">X</div>
+      <div id="warning_content"></div>
       <div style="clear: both;"></div>
     </div>
   </div>
 
   <div id="compose_tweet_area" style="display: none;">
-    <textarea rows="4"></textarea>
+    <textarea rows="4" id="tweet_text"></textarea>
+    <div id="quote_tweet_url"><span class="glyphicon glyphicon-remove-circle" id="quote_tweet_dismiss"></span><span id="quote_tweet_text" class="i18n" title="Quote to this tweet"></span></div>
+    <input type="text" name="quote_tweet_url" id="quote_tweet_url" disable>
     <div id="shortener_area">
-      <input type="text" name="shortener_text">
+      <input type="text" name="shortener_text" id="shortener_text">
       <div id="shorten_current" class="i18n" title="Share current page"></div>
       <div id="shortener_button"><span id="shortenIt" class="i18n"></span></div>
     </div>
     <div class="footer">
       <input id="tweetit" class="i18n" type="button" value="Tweet!" />
-      <span id="upload_button_area">
-        <img id="attach_icon" src="img/attachment.png"><input id="image_input" type="file" name="media" accept="image/*" />
+      <span id="upload_area">
+        <span id="upload_selector"></span>
+        <span id="upload_preview"></span>
+        <input id="image_input" type="file" name="media" accept="image/*" />
       </span>
-      <progress id="upload_progress" max="100"></progress>
-      <span class="chars_left"></span>
+      <span id="chars_left"></span>
     </div>
   </div>
   <div id="compose_tweet">
@@ -71,20 +73,20 @@
 
   <div>
     <span class="header_link_left">
-      <a id="signout" href="#" class="i18n"></a> |
-      <a id="options_page_link" href="#" class="i18n msg-trigger-openoptions"></a> |
-      <a id="refresh_trigger" href="#" class="i18n"></a> |
-      <a id="trending_topics" href="#" class="i18n"></a> |
-      <a id="saved_searches" href="#" class="i18n"></a>
+      <span id="signout" class="i18n glyphicon glyphicon-log-out" title="signout"></span>
+      <span id="options_page_link" class="i18n glyphicon glyphicon-cog" title="option"></span>
+      <span id="refresh_trigger" class="i18n glyphicon glyphicon-refresh" title="refresh"></span>
+      <span id="trending_topics" class="i18n glyphicon glyphicon-trends" title="trending topics"></span>
+      <span id="saved_searches" class="i18n glyphicon glyphicon-search" title="saved searches"></span>
     </span>
     <span class="header_link_right">
-      <a id="suspend_trigger" href="#"><img id="suspend_status" src="img/timeline_suspended.png" class="i18n" title="Click to Resume" /></a>
-      <a id="stream_trigger" href="#"><img id="stream_status" src="img/stream_disconnected.png" class="i18n" title="Connect UserStream" /></a>
-      <a id="detach_trigger" href="#"><img id="detach_window" src="img/up_detach.png" class="i18n" title="Detach window" /></a>
+      <img src="img/loading.gif" id="loading" />
+      <img src="img/loading.gif" id="queue_loading" />
+      <span id="suspend_status" class="i18n glyphicon glyphicon-stop" title="Click to Resume" /></span>
+      <span id="stream_status" class="i18n glyphicon glyphicon-pause" title="Connect UserStream" /></span>
+      <span id="detach_trigger" class="i18n glyphicon glyphicon-eject" title="Detach window" /></span>
       <a id="twitter_link" href="#"><img id="view_twitter" src="img/twitter-bird-16x16.png" class="i18n" title="View Twitter" /></a>
     </span>
-    <img src="img/loading.gif" id="loading" style="display: none;"/>
-    <img src="img/loading.gif" id="queue_loading" style="display: none;"/>
   </div>
 
   <div id="update_tweets"></div>

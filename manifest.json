@@ -1,8 +1,8 @@
 {
     "name": "Silverbird M",
-    "version": "0.5.4.14",
+    "version": "0.5.5.3",
     "manifest_version": 2,
-    "minimum_chrome_version": "38.0",
+    "minimum_chrome_version": "41.0",
     "description": "__MSG_extDescription__",
     "default_locale": "en",
     "browser_action": {
@@ -19,7 +19,9 @@
         "notifications",
         "tabs",
         "http://*/*",
-        "https://*/*"
+        "https://*/*",
+        "webRequest",
+        "webRequestBlocking"
     ],
     "icons": {
         "16": "img/icon16.png",
@@ -36,7 +38,6 @@
                 "https://api.twitter.com/oauth/authorize"
             ],
             "js": [
-                "lib/3rdparty/jquery-2.1.1.min.js",
                 "lib/oauth_authorizer.js"
             ]
         }

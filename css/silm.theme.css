@@ -47,24 +47,24 @@ input[type='text'] {
   border-top: 0;
 }
 
-#warning .img_area {
+#warning_image {
   display: table-cell;
   vertical-align: middle;
   width: 32px;
 }
 
-#warning .content {
+#warning_content {
   margin-left: 5px;
 }
 
-#warning .dismiss {
+#warning_dismiss {
   float: right;
   cursor: pointer;
-  margin-top: -3px;
-  margin-right: -3px;
-  margin-left: 3px;
-  border: 1px solid #b4cff2;
-  padding: 0px 4px 0px 4px;
+  background-color: #f2f2f2;
+  border: .1em solid #999;
+  width: 20px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 #enter_pin,
@@ -77,31 +77,39 @@ input[type='text'] {
   min-width: 440px;
 }
 
+.header_link_left,
+.header_link_right {
+    display: flex;
+    padding: 6px 0 2px;
+  }
+
 .header_link_left {
   float: left;
-  font-size: 8pt;
-  margin-top: 4px;
+}
+
+.header_link_left > span,
+.header_link_right > span {
+    font-size: 1em;
+    margin-right: .5em;
 }
 
 .header_link_right {
   float: right;
-  font-size: 8pt;
-  margin-top: 4px;
 }
 
-.header_link_right #detach_window,
 .header_link_right #view_twitter {
   width: 16px;
   height: 16px;
   margin: 0 2px;
 }
 
-#loading, #queue_loading {
-  float: right;
-  margin: 0;
+#loading,
+#queue_loading {
+    margin: 0 2px;
   padding: 0;
   padding-right: 5px;
   padding-top: 6px;
+    display: none;
 }
 
 .timeline div.ui-resizable-se {
@@ -183,6 +191,53 @@ input[type='text'] {
   cursor: pointer;
   background: transparent url(../img/globe_blue.png) repeat-x 0 0;
 }
+
+#tweetit {
+    width: initial;
+    max-width: 6em;
+    margin: .2em 0 .4em;
+    display: inline-flex;
+    vertical-align: middle;
+  }
+
+  #upload_area {
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+    }
+
+    #upload_selector {
+        display: inherit;
+        margin: 0;
+        padding: .2em .4em;
+        width: auto;
+        height: initial;
+        background-color: #e2e2e2;
+      }
+
+      #upload_preview {
+          display: inherit;
+          vertical-align: bottom;
+        }
+
+        #upload_preview img {
+            width: 24px;
+            height: 24px;
+            border-radius: .4em;
+            margin: 0 .4em;
+          }
+
+          #upload_progress {
+              width: 120px;
+              display: none;
+            }
+
+            #image_input {
+                display: none;
+              }
+              #quote_tweet_url {
+                display: none;
+        }
 
 #compose_tweet_area textarea {
   width: 100%;
@@ -410,16 +465,8 @@ input[type='text'] {
   font-size: 8pt;
 }
 
-.tweet img.verified {
-  margin-top: -2px;
-  padding: 0;
-  vertical-align: middle;
-}
-
-.tweet img.protected {
+.tweet .primary_name > span {
   margin: 0 0.5em;
-  padding: 0;
-  vertical-align: middle;
 }
 
 /* .tweet .header_container */
@@ -456,12 +503,9 @@ input[type='text'] {
   margin: auto 0 auto 1em;
 }
 
-.tweet .footer_container img.retweet {
-  margin: 0 2px;
-  padding: 0;
-  vertical-align: top;
-  max-width: 14px;
-  max-height: 14px;
+.tweet .footer_container .inRetweet > a,
+.tweet .footer_container .selfRetweet > a {
+  padding-left: 4px;
 }
 
 /* .tweet .footer_container */
@@ -474,17 +518,22 @@ input[type='text'] {
   right: 3px;
   margin: auto 0;
   padding: 0;
+  width: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
-.tweet .new_actions img {
+.tweet .new_actions > .new_actions_item {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  font-size: 12px;
   cursor: pointer;
   display: none;
-  margin: 0;
   padding: 0;
 }
 
-.tweet .new_actions img.starred {
-  display: inline;
+.tweet .new_actions > span.glyphicon-star {
+  display: inline-block;
 }
 
 /* .tweet .overlay */
@@ -497,9 +546,19 @@ div.reply_separator {
   position: absolute;
   left: 50%;
   right: 50%;
-  margin-top: -10px;
+  margin-top: -13px;
   margin-left: 13px; /* Half of the padding used for the actions */
+  border: solid .2em #999;
+  border-radius: 20px;
+  padding: 0;
+  background-color: white;
+  color: #999;
+  font-weight: 600;
   cursor: pointer;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  z-index: 99999;
 }
 
 div.worklist_container {
@@ -538,17 +597,6 @@ ul.worklist li {
   padding: 0;
   margin: 0;
   display: block;
-}
-
-#upload_progress {
-  width: 120px;
-  display: none;
-}
-
-#attach_icon {
-  margin-left: 10px;
-  width: 12px;
-  height: 12px;
 }
 
 /* override jQuery UI Structre*/
@@ -610,4 +658,137 @@ ul.worklist li {
 
 div.simple_select .label {
   border: 0;
+}
+
+/* copy from Bootstrap */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('./bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('./bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings' !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-plus:before {
+  content: "\2b";
+}
+.glyphicon-minus:before {
+  content: "\2212";
+}
+.glyphicon-search:before {
+  content: "\e003";
+}
+.glyphicon-star:before {
+  content: "\e006";
+  color: yellow;
+  text-shadow: 1px 1px 1px gray, -1px 1px 1px gray, 1px -1px 1px gray, -1px -1px 1px gray;
+}
+.glyphicon-star-empty:before {
+  content: "\e007";
+  color: black;
+}
+.glyphicon-star-empty:hover:before {
+  color: yellow;
+  text-shadow: 1px 1px 1px gray, -1px 1px 1px gray, 1px -1px 1px gray, -1px -1px 1px gray;
+}
+.glyphicon-ok:before {
+  content: "\e013";
+}
+.glyphicon-remove:before {
+  content: "\e014";
+}
+.glyphicon-cog:before {
+  content: "\e019";
+}
+.glyphicon-trash:before {
+  content: "\e020";
+}
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+.glyphicon-lock:before {
+  content: "\e033";
+}
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+.glyphicon-check:before {
+  content: "\e067";
+}
+.glyphicon-play:before {
+  content: "\e072";
+}
+.glyphicon-pause:before {
+  content: "\e073";
+}
+.glyphicon-stop:before {
+  content: "\e074";
+}
+.glyphicon-forward:before {
+  content: "\e075";
+}
+.glyphicon-eject:before {
+  content: "\e078";
+}
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+.glyphicon-reply:before {
+  content: "\e095";
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.glyphicon-comment:before {
+  content: "\e111";
+}
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+.glyphicon-link:before {
+  content: "\e144";
+}
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+.glyphicon-trends:before {
+  content: "\e155";
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+.glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+.glyphicon-menu-up:before {
+  content: "\e260";
 }
