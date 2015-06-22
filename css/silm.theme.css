@@ -67,11 +67,6 @@ input[type='text'] {
   text-align: center;
 }
 
-#enter_pin,
-#error_pin {
-  min-width: 300px;
-}
-
 #workspace {
   margin: 0 4px 0 4px;
   min-width: 440px;
@@ -103,13 +98,21 @@ input[type='text'] {
   margin: 0 2px;
 }
 
+.rotate_anime,
 #loading,
 #queue_loading {
-    margin: 0 2px;
-  padding: 0;
-  padding-right: 5px;
-  padding-top: 6px;
-    display: none;
+  width: 16px;
+  height: 16px;
+  margin: 0 2px;
+  display: none;
+  -webkit-animation: rotate 2s;
+  -webkit-animation-iteration-count: infinite;
+  transform-origin: 6.6px 7.4px;
+}
+
+@-webkit-keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .timeline div.ui-resizable-se {
@@ -478,7 +481,7 @@ input[type='text'] {
   line-height: 1.4;
   white-space: pre-wrap;
   margin-left: 52px;
-  margin-top: -3px;
+  margin-top: 0px;
 }
 
 /* .tweet .text_container */
@@ -486,7 +489,7 @@ input[type='text'] {
 /* .tweet .footer_container */
 
 .tweet .footer_container {
-  margin: -2px 0 0 0;
+  margin: 2px 0 0 0;
   padding: 0;
   position: relative;
   font-size: 8pt;
@@ -521,11 +524,12 @@ input[type='text'] {
   width: 12px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap-reverse;
+  flex-shrink: 1;
 }
 
 .tweet .new_actions > .new_actions_item {
-    margin-top: 4px;
-    margin-bottom: 4px;
+  margin: 4px 0 4px 4px;
   font-size: 12px;
   cursor: pointer;
   display: none;
@@ -684,6 +688,9 @@ div.simple_select .label {
 }
 .glyphicon-minus:before {
   content: "\2212";
+}
+.glyphicon-envelope:before {
+  content: "\2709";
 }
 .glyphicon-search:before {
   content: "\e003";

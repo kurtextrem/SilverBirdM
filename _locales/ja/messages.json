@@ -6,7 +6,7 @@
   "resetSize": {
     "message": "サイズをリセットしたいならダブルクリックしてください"
   },
-  "composeTweet": {
+  "composeText": {
     "message": "ツイートする",
     "description": "新しいツイートの入力欄を開く"
   },
@@ -160,14 +160,17 @@
   "deleteRTConfirm": {
     "message": "このリツイートを取り消しますか: "
   },
-  "oldRT": {
-    "message": "引用してツイート"
+  "quoteTweet": {
+    "message": "引用ツイート"
+  },
+  "directMessage": {
+    "message": "DM"
   },
   "newToken": {
     "message": "違うトークンをリクエスト"
   },
   "shortenerIdleString": {
-    "message": "短縮したいURLを入力するか、右画像をクリックしてください。 \u2192"
+    "message": "短縮したいURLを入力してください。この欄を選択するとサジェストします。"
   },
   "tweet_singular": {
     "message": "更新"
@@ -267,7 +270,7 @@
     "message": "検索キーワードが未入力か、検索結果がありませんでした。"
   },
   "ue_updatingTweets_nofetched": {
-    "message": "<br>何度も空っぽのままなら、Silverbird Mをリロードしてください。"
+    "message": "何も取得できませんでした。"
   },
   "ue_deletingTweet": {
     "message": "ツイートの削除に失敗しました エラー $status$",
@@ -493,9 +496,6 @@
   "l_notification_fade_timeout": {
     "message": "通知のタイムアウト (秒)"
   },
-  "l_notification_max_popups": {
-    "message": "一度に通知する最大数 (-1: 全て通知)"
-  },
   "g_shortener": {
     "message": "短縮URL"
   },
@@ -547,32 +547,23 @@
   "l_notifications_timeline": {
     "message": "通知"
   },
-  "l_tweets_per_page": {
-    "message": "1ページ中のツイート数 (廃止予定)"
-  },
-  "l_max_cached_tweets": {
-    "message": "ツイートの最大表示数 (廃止予定)"
-  },
   "g_advanced": {
     "message": "詳細設定"
   },
   "l_request_timeout": {
     "message": "リクエストタイムアウト (ミリ秒)"
   },
-  "btn_save": {
+  "btn_save_text": {
     "message": "保存"
   },
-  "btn_reset": {
+  "btn_reset_text": {
     "message": "破棄"
   },
-  "btn_default": {
+  "btn_default_text": {
     "message": "初期化"
   },
   "shortenIt": {
     "message": "URLを短くする"
-  },
-  "shorten_current": {
-    "message": "表示中のページを共有する"
   },
   "tweet_send_error": {
     "message": "ツイート中にエラーが発生しました。文字数を超過しているか、同じ文面のツイートをしていないか確かめてからやり直してみてください。"
@@ -594,12 +585,6 @@
   },
   "add_mention_action": {
     "message": "メンションを送る"
-  },
-  "g_image_service": {
-    "message": "画像サービス (廃止予定)"
-  },
-  "l_image_up_service": {
-    "message": "画像アップローダー"
   },
   "trending_topics": {
     "message": "トレンド"
@@ -670,7 +655,7 @@
     "message": "フッターを表示しない"
   },
   "ue_expand_in_reply": {
-    "message": "リプライ元が削除されているか、保護されたユーザです。"
+    "message": "ツイートが削除されているか、保護されたユーザです。"
   },
   "l_hidden_reply_info": {
     "message": "リプライ情報を表示しない"
@@ -835,5 +820,34 @@
   },
   "ue_media_upload_error": {
     "message": "画像のアップロードに失敗しました。"
+  },
+  "quote_tweet_url": {
+    "message": "このツイートを引用"
+  },
+  "l_quote_tweet_url": {
+    "message": "このツイート($url$)を引用",
+    "placeholders": {
+      "url": {
+        "content": "$1"
+      }
+    }
+  },
+  "expand_quote_tweet": {
+    "message": "引用ツイートを展開"
+  },
+  "verified_account": {
+    "message": "認証済みアカウント"
+  },
+  "protected_account": {
+    "message": "保護されたアカウント"
+  },
+  "l_exclude_blocked_and_muted": {
+    "message": "ブロックとミュートを反映する"
+  },
+  "l_exclude_retweet": {
+    "message": "リツイートを除外する"
+  },
+  "now_uploading": {
+    "message": "画像をアップロード中..."
   }
 }

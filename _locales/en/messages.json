@@ -6,11 +6,7 @@
   "resetSize": {
     "message": "Double click to reset size"
   },
-  "composeTweet": {
-    "message": "Compose tweet",
-    "description": "Text for composing new tweet"
-  },
-  "composeTweet": {
+  "composeText": {
     "message": "Compose tweet",
     "description": "Text for composing new tweet"
   },
@@ -167,11 +163,14 @@
   "quoteTweet": {
     "message": "Quote Tweet"
   },
+  "directMessage": {
+    "message": "DM"
+  },
   "newToken": {
     "message": "Request another token"
   },
   "shortenerIdleString": {
-    "message": "Type a URL to make it shorter, or, click right here \u2192"
+    "message": "Type a URL to make it shorter, or, click here to suggest URL"
   },
   "tweet_singular": {
     "message": "tweet"
@@ -271,7 +270,7 @@
     "message": "No search query, or No results"
   },
   "ue_updatingTweets_nofetched": {
-    "message": "<br> If no tweets is displayed repeatedly, please try to reload the Silverbird M."
+    "message": "No Tweets."
   },
   "ue_deletingTweet": {
     "message": "Unexpected error $status$ deleting tweet.",
@@ -497,9 +496,6 @@
   "l_notification_fade_timeout": {
     "message": "Notification Timeout (s)"
   },
-  "l_notification_max_popups": {
-    "message": "Notifications at once (-1: all)"
-  },
   "g_shortener": {
     "message": "Shortener"
   },
@@ -551,32 +547,23 @@
   "l_notifications_timeline": {
     "message": "Notifications"
   },
-  "l_tweets_per_page": {
-    "message": "Tweets per Page (deprecated)"
-  },
-  "l_max_cached_tweets": {
-    "message": "Max Shown Tweets (deprecated)"
-  },
   "g_advanced": {
     "message": "Advanced"
   },
   "l_request_timeout": {
     "message": "Request Timeout (ms)"
   },
-  "btn_save": {
+  "btn_save_text": {
     "message": "Save"
   },
-  "btn_reset": {
+  "btn_reset_text": {
     "message": "Reset"
   },
-  "btn_default": {
+  "btn_default_text": {
     "message": "Reset to default"
   },
   "shortenIt": {
     "message": "Shorten it!"
-  },
-  "shorten_current": {
-    "message": "Share current page"
   },
   "tweet_send_error": {
     "message": "An error occurred while trying to send your tweet. Maybe Twitter is acting weird? You can try it again but please double check your account to prevent duplicated messages or overcount Twitter Max words."
@@ -598,12 +585,6 @@
   },
   "add_mention_action": {
     "message": "Mention"
-  },
-  "g_image_service": {
-    "message": "Image Service (deprecated)"
-  },
-  "l_image_up_service": {
-    "message": "Image Upload Service"
   },
   "trending_topics": {
     "message": "Trends"
@@ -862,5 +843,14 @@
   },
   "protected_account": {
     "message": "Protected Account"
+  },
+  "l_exclude_blocked_and_muted": {
+    "message": "Allow to exclude blocked or muted users"
+  },
+  "l_exclude_retweet": {
+    "message": "Allow to exclude retweet"
+  },
+  "now_uploading": {
+    "message": "Now Uploading..."
   }
 }
