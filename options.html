@@ -166,7 +166,7 @@
           <th class="i18n col-md-1" id="l_dms_timeline">DM</th>
           <th class="i18n col-md-1" id="l_lists_timeline">Lists</th>
           <th class="i18n col-md-1" id="l_search_timeline">Search</th>
-          <th class="i18n col-md-1" id="l_favorites_timeline">Favorites</th>
+          <th class="i18n col-md-1" id="l_likes_timeline">Likes</th>
           <th class="i18n col-md-1" id="l_notifications_timeline">Notifications</th>
         </tr>
         <tr>
@@ -177,7 +177,7 @@
           <td><input type="checkbox" name="dms_visible"></td>
           <td><input type="checkbox" name="lists_visible"></td>
           <td><input type="checkbox" name="search_visible"></td>
-          <td><input type="checkbox" name="favorites_visible"></td>
+          <td><input type="checkbox" name="likes_visible"></td>
           <td>&nbsp;</td>
         </tr>
         <tr>
@@ -188,7 +188,7 @@
           <td><input type="checkbox" name="dms_include_unified"></td>
           <td><input type="checkbox" name="lists_include_unified"></td>
           <td><input type="checkbox" name="search_include_unified"></td>
-          <td><input type="checkbox" name="favorites_include_unified"></td>
+          <td><input type="checkbox" name="likes_include_unified"></td>
           <td><input type="checkbox" name="notification_include_unified"></td>
         </tr>
         <tr>
@@ -221,7 +221,7 @@
           <td><input type="text" class="form-control" name="dms_refresh_interval" validator="required,number,minRefresh" converter="RefreshInterval"></td>
           <td><input type="text" class="form-control" name="lists_refresh_interval" validator="required,number,minRefresh" converter="RefreshInterval"></td>
           <td><input type="text" class="form-control" name="search_refresh_interval" validator="required,number,minRefresh" converter="RefreshInterval"></td>
-          <td><input type="text" class="form-control" name="favorites_refresh_interval" validator="required,number,minRefresh" converter="RefreshInterval"></td>
+          <td><input type="text" class="form-control" name="likes_refresh_interval" validator="required,number,minRefresh" converter="RefreshInterval"></td>
           <td>&nbsp;</td>
         </tr>
         <tr>
@@ -249,7 +249,7 @@
           </td>
           <td>
             <div class="color_selector checkerboard"></div>
-            <div name="favorites_tweets_color" class="color_selector">&nbsp;</div>
+            <div name="likes_tweets_color" class="color_selector">&nbsp;</div>
           </td>
           <td>&nbsp;</td>
         </tr>
@@ -306,7 +306,7 @@
       <div class="panel-body">
         <div class="row form-group">
           <div class="col-md-8"><label for="url_shortener" class="i18n" id="l_url_shortener">URL Shortener</label></div>
-          <div class="col-md-4"><select class="form-control" name="url_shortener"></select></div>
+          <div class="col-md-4"><select class="form-control" name="url_shortener" must_restart></select></div>
         </div>
         <div class="row form-group">
           <div class="col-md-8"><label for="share_include_title" class="i18n" id="l_share_include_title">Include page title (sharing)</label></div>
@@ -324,6 +324,10 @@
         <div class="row form-group">
           <div class="col-md-8"><label for="trending_topics_woeid" class="i18n" id="l_trending_topics_woeid">Trending Topics Locale</label></div>
           <div class="col-md-4"><select class="form-control" name="trending_topics_woeid"></select></div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-8"><label for="notify_update_trends" class="i18n" id="l_notify_update_trends">Notify Updates of Trending Topics</label></div>
+          <div class="col-md-4"><input type="checkbox" class="checkbox" name="notify_update_trends" /></div>
         </div>
       </div>
     </div>

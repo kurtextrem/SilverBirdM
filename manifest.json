@@ -1,8 +1,8 @@
 {
     "name": "Silverbird M",
-    "version": "0.5.6.5",
+    "version": "0.5.7.1",
     "manifest_version": 2,
-    "minimum_chrome_version": "43.0",
+    "minimum_chrome_version": "46.0",
     "description": "__MSG_extDescription__",
     "default_locale": "en",
     "browser_action": {
@@ -44,7 +44,6 @@
     ],
     "options_page": "options.html",
     "short_name": "__MSG_extShortName__",
-    "update_url": "http://clients2.google.com/service/update2/crx",
     "web_accessible_resources": [
         "oauth_callback.html",
         "popup.html"

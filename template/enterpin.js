@@ -1,14 +1,14 @@
 $(document.body)
 .append(document.getElementById('importEnterPin').import.querySelector('#templateEnterPin').content)
 .on('click.enterpin', '#btnAuthorize', function(event) {
-  var pinNumber = event.target.value || '';
+  var pinNumber = document.getElementById('input_pin').value || '';
   var loading = $("#loading_oauth");
   loading.show();
   twitterBackend.oauthLib.getAccessToken(pinNumber, function(result) {
     loading.hide();
     $("#enter_pin").hide();
     if(result) {
-      location.reload();
+      window.close();
     } else {
       $("#error_pin")
       .show()
@@ -21,4 +21,3 @@ $(document.body)
   window.close();
 });
 doLocalization();
-
