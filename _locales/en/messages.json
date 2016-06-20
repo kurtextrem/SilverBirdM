@@ -512,7 +512,7 @@
     "message": "Visible"
   },
   "l_refresh_interval_seconds": {
-    "message": "Refresh Interval (s)"
+    "message": "Refresh Interval (s) (deprecated)"
   },
   "l_refresh_interval_minutes": {
     "message": "Refresh Interval (m)"
@@ -763,9 +763,6 @@
   },
   "l_tweet_notificacion": {
     "message": "Notify Tweets"
-  },
-  "l_timeline_display": {
-    "message": "Display Timelines"
   },
   "d_restart_immediately": {
     "message": "Restart immediately"

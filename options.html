@@ -11,6 +11,8 @@
   <script src="lib/3rdparty/jquery-2.1.4.min.js"></script>
   <script src="lib/3rdparty/bootstrap.min.js"></script>
   <script src="lib/3rdparty/colorpicker.js"></script>
+  <script src="lib/options/converters.js"></script>
+  <script src="lib/options/validator.js"></script>
   <script src="lib/options/options.js"></script>
   <script src="lib/options/page.js"></script>
   <title>Silverbird M Options</title>
@@ -156,9 +158,6 @@
       </div>
       <table class="table">
         <tr>
-          <th colspan="5" class="i18n col-md-12" id="l_timeline_display">Display Timelines</th>
-        </tr>
-        <tr>
           <th class="col-xs-4">&nbsp;</th>
           <th class="i18n col-md-1" id="l_unified_timeline">Unified Timeline</th>
           <th class="i18n col-md-1" id="l_home_timeline">Home</th>
@@ -214,7 +213,7 @@
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <th class="i18n" id="l_refresh_interval_seconds">Refresh Interval (s)</th>
+          <th class="i18n" id="l_refresh_interval_seconds">Refresh Interval (s) (deprecated)</th>
           <td>&nbsp;</td>
           <td><input type="text" class="form-control" name="home_refresh_interval" validator="required,number,minRefresh" converter="RefreshInterval"></td>
           <td><input type="text" class="form-control" name="mentions_refresh_interval" validator="required,number,minRefresh" converter="RefreshInterval"></td>
@@ -352,9 +351,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <a class="locales_report" href="locales.html">Locales Report</a>
   </div>
 </body>
 </html>
