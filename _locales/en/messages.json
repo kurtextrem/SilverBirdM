@@ -511,12 +511,6 @@
   "l_visible": {
     "message": "Visible"
   },
-  "l_refresh_interval_seconds": {
-    "message": "Refresh Interval (s) (deprecated)"
-  },
-  "l_refresh_interval_minutes": {
-    "message": "Refresh Interval (m)"
-  },
   "l_include_in_unified": {
     "message": "Include in unified timeline"
   },
@@ -878,5 +872,9 @@
   },
   "ue_already_retweeting": {
     "message": "You have already retweeted this tweet."
+  },
+  "o_no_shorten": {
+    "message": "No Shorten"
   }
+  
 }
