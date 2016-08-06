@@ -1,9 +1,3 @@
-html, body {
-  font-family: Helvetica, Arial, sans-serif, 'Segoe UI Symbol', 'Apple Color Emoji', Symbola;
-  font-style: normal;
-  font-weight: 300;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -298,6 +292,8 @@ input[type='text'] {
 }
 
 .tweet_overlay {
+  border-radius: .4em;
+  padding: 1px 0px 1px 3px;
   border: .2em solid #e5e5e5;
   background-color: #f2f2f2;
   display: flex;
@@ -317,6 +313,7 @@ input[type='text'] {
   padding: .5em;
   border-bottom: .1em solid #e5e5e5;
   display: flex;
+  order:  2;
 }
 
 .retweets_container > span {
@@ -335,6 +332,7 @@ input[type='text'] {
 
 .retweets_container > span.inRetweet img {
   margin: .1em .5em -0.2em 0;
+  vertical-align: sub;
 }
 
 .retweets_container > span.glyphicon {
@@ -351,6 +349,14 @@ input[type='text'] {
 }
 
 .icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.ui-widget-content a {
+  color: #888;
 }
 
 img.profile.retweeter {
@@ -397,6 +403,7 @@ img.profile.icon_max {
 .name_container > div.primary_name,
 .name_container > div.primary_name a {
   font-weight: 500;
+  font-size:  0.99em;
 }
 
 .name_container > div.secondary_name,
@@ -410,12 +417,18 @@ img.profile.icon_max {
 }
 
 .text_container {
+  line-height: 1.4;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.text_container > span {
+  display:  inline-block;
 }
 
 .footer_container {
   font-size: 8pt;
   margin-top: 4px;
-  text-align: right;
   color: #999;
   display: flex;
 }
@@ -426,11 +439,8 @@ img.profile.icon_max {
 }
 
 .footer_container > span > a {
-  word-break: keep-all
-}
-
-.footer_container > span.timestamp {
-  flex: 100;
+  word-break: keep-all;
+  color: #999;
 }
 
 .footer_container > span > span.glyphicon {
@@ -446,6 +456,8 @@ img.profile.icon_max {
   flex-wrap: wrap-reverse;
   flex-shrink: 1;
   align-items: flex-start;
+  position:  absolute;
+  right:  5px;
 }
 
 .tweet .new_actions > .new_actions_item {
@@ -574,9 +586,7 @@ ul.worklist li {
 /* copy from Bootstrap */
 @font-face {
   font-family: 'Glyphicons Halflings';
-
-  src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('./bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('./bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('./bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2');
 }
 .glyphicon {
   position: relative;
