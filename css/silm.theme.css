@@ -327,7 +327,7 @@ input[type='text'] {
 
 .retweets_container > span.selfRetweet,
 .retweets_container > span.inRetweet {
-  flex: 100;
+
 }
 
 .retweets_container > span.inRetweet img {
@@ -614,7 +614,6 @@ ul.worklist li {
 }
 .glyphicon-heart:before {
   content: "\e005";
-  color: #E81C4F;
 }
 .glyphicon-heart-empty:before {
   content: "\e143";
