@@ -2,6 +2,8 @@
 
 ### What is it? ###
 
+This is a fork of https://github.com/studioddtonline/Silverbird-M - all of the JavaScript work is done by him. I only change CSS (His layout is good for chinese, but not for english, german and similar) and add background tab opening (when clicking a link) whenever he updates his code.
+
 Silverbird M is a general purpose Chrome/Chromium Twitter extension.  
 Silverbird M is a fork of the Silver Bird.
 
