@@ -401,8 +401,7 @@ img.profile.icon_max {
   margin-right: .5em;
 }
 
-.name_container > div.primary_name,
-.name_container > div.primary_name a {
+.name_container > div.primary_name .user {
   font-weight: 500;
   font-size:  0.99em;
 }
