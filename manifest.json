@@ -2,7 +2,7 @@
     "name": "Silverbird M",
     "version": "0.5.8.7",
     "manifest_version": 2,
-    "minimum_chrome_version": "52.0.2743",
+    "minimum_chrome_version": "55.0",
     "description": "__MSG_extDescription__",
     "default_locale": "en",
     "browser_action": {
@@ -21,6 +21,7 @@
             "lib/expander.js",
             "lib/options_backend.js",
             "lib/TwitterRequest.js",
+            "lib/NotificationManager.js",
             "lib/timeline_factory.js",
             "lib/timeline_template.js",
             "lib/timelines/timeline.js",
