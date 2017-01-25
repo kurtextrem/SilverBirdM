@@ -385,18 +385,6 @@
   "day_plural": {
     "message": "days"
   },
-  "month_singular": {
-    "message": "month"
-  },
-  "month_plural": {
-    "message": "months"
-  },
-  "year_singular": {
-    "message": "year ago"
-  },
-  "year_plural": {
-    "message": "years ago"
-  },
   "options_title": {
     "message": "Silverbird M Options"
   },
@@ -820,9 +808,6 @@
   },
   "ue_media_upload_error": {
     "message": "Error occurred when uploading image."
-  },
-  "quote_tweet_url": {
-    "message": "Quote to this tweet"
   },
   "quote_tweet_url": {
     "message": "Quote to this tweet"
