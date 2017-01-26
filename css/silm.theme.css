@@ -307,7 +307,6 @@
 
 .retweets_container > span.glyphicon {
 	margin: .2em .5em -0.1em 0;
-	color: #333;
 }
 
 .retweets_container > span.action_cancel_retweet:hover {
