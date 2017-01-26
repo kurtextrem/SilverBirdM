@@ -260,7 +260,6 @@ input#shortener_text.idle {
   border-bottom: .1em solid #e5e5e5;
   display: flex;
   flex-flow: row nowrap;
-  order: 2;
 }
 
 .retweets_container > span {
@@ -520,10 +519,6 @@ div.reply_separator {
   border-radius: 0;
   background: transparent none;
   line-height: 1.6;
-}
-
-.ui-widget-content a {
-	color: #665;
 }
 
 .ui-state-default a,
