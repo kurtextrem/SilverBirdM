@@ -1,6 +1,6 @@
 .colorpicker {
 	/*width: 356px;*/
-  width: 399px;
+	width: 399px;
 	height: 176px;
 	overflow: hidden;
 	position: absolute;
@@ -73,11 +73,11 @@
 }
 
 .colorpicker_alpha_scroller {
-  position: absolute;
-  width: 17px;
-  height: 150px;
-  top: 13px;
-  left: 219px;
+	position: absolute;
+	width: 17px;
+	height: 150px;
+	top: 13px;
+	left: 219px;
 }
 
 .colorpicker_new_color {
@@ -85,7 +85,7 @@
 	width: 60px;
 	height: 30px;
 	/*left: 213px;*/
-  left: 256px;
+	left: 256px;
 	top: 13px;
 	background: #f00;
 }
@@ -94,7 +94,7 @@
 	width: 60px;
 	height: 30px;
 	/*left: 283px;*/
-  left: 326px;
+	left: 326px;
 	top: 13px;
 	background: #f00;
 }
@@ -118,14 +118,14 @@
 	height: 22px;
 	background: url(images/colorpicker_hex.png) top;
 	/*left: 212px;*/
-  left: 255px;
+	left: 255px;
 	top: 142px;
-  display: none;
+	display: none;
 }
 .colorpicker_alpha_input {
 	position: absolute;
 	background: url(images/colorpicker_alpha.png) top;
-  left: 285px;
+	left: 285px;
 	top: 142px;
 }
 .colorpicker_hex input {
@@ -150,37 +150,37 @@
 	background-image: url(images/colorpicker_rgb_r.png);
 	top: 52px;
 	/*left: 212px;*/
-  left: 255px;
+	left: 255px;
 }
 .colorpicker_rgb_g {
 	background-image: url(images/colorpicker_rgb_g.png);
 	top: 82px;
 	/*left: 212px;*/
-  left: 255px;
+	left: 255px;
 }
 .colorpicker_rgb_b {
 	background-image: url(images/colorpicker_rgb_b.png);
 	top: 112px;
 	/*left: 212px;*/
-  left: 255px;
+	left: 255px;
 }
 .colorpicker_hsb_h {
 	background-image: url(images/colorpicker_hsb_h.png);
 	top: 52px;
 	/*left: 282px;*/
-  left: 325px;
+	left: 325px;
 }
 .colorpicker_hsb_s {
 	background-image: url(images/colorpicker_hsb_s.png);
 	top: 82px;
 	/*left: 282px;*/
-  left: 325px;
+	left: 325px;
 }
 .colorpicker_hsb_b {
 	background-image: url(images/colorpicker_hsb_b.png);
 	top: 112px;
 	/*left: 282px;*/
-  left: 325px;
+	left: 325px;
 }
 .colorpicker_submit {
 	position: absolute;
@@ -188,7 +188,7 @@
 	height: 22px;
 	background: url(images/colorpicker_submit.png) top;
 	/*left: 322px;*/
-  left: 365px;
+	left: 365px;
 	top: 142px;
 	overflow: hidden;
 }

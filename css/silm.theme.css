@@ -522,6 +522,10 @@ div.reply_separator {
   line-height: 1.6;
 }
 
+.ui-widget-content {
+	color: rgb(34, 34, 34);
+}
+
 .ui-widget-content a {
 	color: #665;
 }
