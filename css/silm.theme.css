@@ -475,6 +475,10 @@ div.reply_separator {
   padding: 0;
 }
 
+br + br {
+	display: none;
+}
+
 .ui-tooltip > .ui-tooltip-content {
   margin: 0;
   padding: 0;
@@ -526,8 +530,16 @@ div.reply_separator {
 	color: rgb(34, 34, 34);
 }
 
-.ui-widget-content a {
+.ui-widget-content .name_container a {
 	color: #665;
+}
+
+.ui-widget-content .text_container a {
+	color: #663 ;
+}
+
+.text_container a[data-handle-hash-tag] {
+	color: #333;
 }
 
 .ui-state-default a,

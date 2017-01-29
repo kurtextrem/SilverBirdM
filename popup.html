@@ -20,10 +20,10 @@
 <script src="lib/popup/paginator.js"></script>
 <script src="lib/popup/theme_manager.js"></script>
 <script src="lib/popup/work_list.js"></script>
+<script src="lib/popup/SilMSnackbar.js"></script>
 <script src="lib/popup/SilMShortener.js"></script>
 <script src="lib/popup/SilMComposer.js"></script>
 <script src="lib/popup/composer.js"></script>
-<script src="lib/popup/shortener.js"></script>
 <script src="lib/popup/renderer.js"></script>
 <script src="lib/popup/lists.js"></script>
 <script src="lib/popup/context_menu.js"></script>
@@ -34,8 +34,6 @@
 <script src="lib/popup/popup_init.js"></script>
 </head>
 <body>
-<a style="position:absolute; left:-5000px;" href="">dummy</a>
-
 <div id="workspace" style="display: none;">
   <div class="header_links">
     <div class="header_link_left">
@@ -64,9 +62,7 @@
         <span class="glyphicon glyphicon-remove-circle" id="quote_tweet_dismiss"></span>
         <span id="quote_tweet_text" class="i18n" title="Quote to this tweet"></span>
       </div>
-      <silm-shortener>
-        <input type="text" name="shortener_text" class="idle" id="shortener_text"></input>
-      </silm-shortener>
+      <silm-shortener></silm-shortener>
       <div id="attach_media_area">
         <input id="tweetit" class="i18n" type="button" value="Tweet!" />
         <input id="attach_button" class="i18n" type="button" value="Attach" />
@@ -78,14 +74,7 @@
     </div>
   </silm-composer>
 
-  <div id="absolute_container">
-    <div id="warning">
-      <div id="warning_image"><img src="img/warning.png" /></div>
-      <div id="warning_dismiss">X</div>
-      <div id="warning_content"></div>
-      <div style="clear: both;"></div>
-    </div>
-  </div>
+  <silm-snackbar class="info"></silm-snackbar>
 </div>
 
 <ul id="tab_context_menu" class="contextMenu"></ul>
