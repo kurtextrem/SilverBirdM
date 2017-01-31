@@ -1,13 +1,14 @@
 @import "./silm_reset.css";
 
 #workspace {
-  margin: 0 4px 0 4px;
+  margin: 0 2px;
   min-width: 440px;
   display: flex;
   flex-flow: column nowrap;
 }
 
 .header_links {
+	font-size: 0.7rem;
   margin-top: 26px;
   display: flex;
   flex-flow: row nowrap;
@@ -19,7 +20,7 @@
   flex: 1 1 auto; /* flex item from .header_links */
   display: flex;
   flex-flow: row nowrap;
-  padding: 6px 0 2px;
+  padding: 3px 0 0;
 }
 
 .header_link_left {
@@ -178,7 +179,7 @@
 }
 
 #tabs .update_modifier {
-  border: .1em solid red !important;
+  border: .1em solid #ef9a9a !important;
   border-bottom: none !important;
 }
 
@@ -428,10 +429,6 @@ div.reply_separator {
   padding: 0;
 }
 
-br + br {
-	display: none;
-}
-
 .ui-tooltip > .ui-tooltip-content {
   margin: 0;
   padding: 0;
@@ -483,6 +480,17 @@ br + br {
 	color: rgb(34, 34, 34);
 }
 
+.ui-tabs {
+	padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav {
+	padding-top: 0px;
+	padding-left: 0;
+	margin-left: -1px;
+	margin-top: -2px;
+}
+
 .ui-widget-content .name_container a {
 	color: #665;
 }
@@ -521,4 +529,31 @@ br + br {
 .ui-state-focus a:link,
 .ui-state-focus a:visited {
   color: #555;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: rgba(0,0,0,0);
+	border-radius: 100px;
+	/*transition: background-color 1s linear;*/
+}
+::-webkit-scrollbar:horizontal {
+	height: 6px;
+}
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-webkit-scrollbar:hover {
+	background-color: rgba(0, 0, 0, 0.07);
+}
+
+/* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+::-webkit-scrollbar-thumb {
+	/*transition: background-color 1s linear;*/
+}
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:vertical:active,  ::-webkit-scrollbar-thumb:horizontal:active {
+	background-color: rgba(0,0,0,0.51); /* Some darker color when you click it */
+	border-radius: 100px;
 }
