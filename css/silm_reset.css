@@ -1,5 +1,5 @@
 :root {
-  --main-font-color: #333;
+  --main-font-color: #292f33;
   --main-bg-color: #f4f4f4;
   --main-bd-color: #c5c5c5;
   --hover-bg-color: #ededed;
@@ -12,8 +12,8 @@ body {
   padding: 0;
   overflow: hidden;
   color: var(--main-font-color);
-  font-family: var(--slim-main-fonts), var(--silm-emoji-fonts);
-  font-size: 11pt;
+  font-family: var(--slim-main-fonts), var(--silm-emoji-fonts) !important;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
   overflow: hidden;
@@ -100,7 +100,8 @@ input[type='text'] {
   content: "\e062";
 }
 .glyphicon-check:before {
-  content: "\e067";
+  /*content: "\e067";*/
+  content: "\e084";
 }
 .glyphicon-play:before {
   content: "\e072";

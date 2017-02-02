@@ -192,7 +192,7 @@
 }
 
 .tweet_overlay {
-	border: .2em solid #e5e5e5;
+	border: 1px solid #e1e8ed;
 	background-color: var(--main-bg-color);
 	display: flex;
 	flex-flow: row nowrap;
@@ -211,7 +211,7 @@
   color: #999;
   margin: 0;
   padding: .5em;
-  border-bottom: .1em solid #e5e5e5;
+  border-bottom: 1px solid #e1e8ed;
   display: flex;
   flex-flow: row nowrap;
   order: 2;
@@ -270,6 +270,7 @@ img.profile.icon_small {
 img.profile.icon_normal {
   width: 48px;
   height: 48px;
+   	border-radius: 5px;
 }
 
 img.profile.icon_large {
@@ -311,20 +312,30 @@ img.profile.icon_max {
 
 .name_container > span.verifiedAccount,
 .name_container > span.protectedAccount {
-  margin: .2em .5em 0 0;
+	top: 3px;
+	left: -3px;
+	opacity: 0.5;
+}
+
+.glyphicon-ok-sign:before {
+  color: #77c7f7;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .text_container {
+	word-wrap: break-word;
+	white-space: pre-wrap;
 }
 
 .footer_container {
   font-size: 8pt;
   margin-top: 4px;
-  text-align: right;
   color: #999;
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
+  margin-left: 2px;
 }
 
 .footer_container > span {
@@ -382,7 +393,7 @@ div.reply_separator {
   right: 50%;
   margin-top: -13px;
   margin-left: 13px; /* Half of the padding used for the actions */
-  border: solid .2em #999;
+  border: 1px solid #e1e8ed;
   border-radius: 20px;
   padding: 0;
   background-color: white;
@@ -399,6 +410,7 @@ div.reply_separator {
 
 .ui-tabs .ui-tabs-panel {
   padding: 0;
+      margin-right: -7px;
 }
 
 .ui-tabs .ui-tabs-nav {
@@ -477,7 +489,9 @@ div.reply_separator {
 }
 
 .ui-widget-content {
-	color: rgb(34, 34, 34);
+	/*color: rgb(34, 34, 34);*/
+	/*color: rgb(20, 30, 34);*/
+	color: #292f33;
 }
 
 .ui-tabs {
@@ -492,11 +506,11 @@ div.reply_separator {
 }
 
 .ui-widget-content .name_container a {
-	color: #665;
+	color: #666;
 }
 
 .ui-widget-content .text_container a {
-	color: #663 ;
+	color: #664 ;
 }
 
 .text_container a[data-handle-hash-tag] {
@@ -531,8 +545,23 @@ div.reply_separator {
   color: #555;
 }
 
+.inReply:before {
+	content: "\e095";
+	display: inline-block;
+	transform: rotate3d(1, 0, 0, 180deg);
+
+	position: relative;
+	top: 1px;
+	font-family: 'Glyphicons Halflings' !important;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+}
+
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 8px;
 	background-color: rgba(0,0,0,0);
 	border-radius: 100px;
 	/*transition: background-color 1s linear;*/
