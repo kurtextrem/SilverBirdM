@@ -346,6 +346,7 @@ img.profile.icon_max {
 
 .footer_container > span.inReply {
 	order: 0;
+	z-index: 2;
 }
 
 .footer_container > span.from_app,
@@ -544,6 +545,7 @@ div.reply_separator {
 	content: "\e095";
 	display: inline-block;
 	transform: rotate3d(1, 0, 0, 180deg);
+	z-index: 3;
 
 	position: relative;
 	top: 1px;
@@ -562,7 +564,7 @@ div.reply_separator {
 	/*transition: background-color 1s linear;*/
 }
 ::-webkit-scrollbar:horizontal {
-	height: 6px;
+	height: 8px;
 }
 /* hover effect for both scrollbar area, and scrollbar 'thumb' */
 ::-webkit-scrollbar:hover {
@@ -576,6 +578,9 @@ div.reply_separator {
 ::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
 	background-color: rgba(0,0,0,0.3);
 	border-radius: 100px;
+	background-clip: padding-box;
+	border: 2px solid rgba(0, 0, 0, 0);
+	min-height: 30px;
 }
 ::-webkit-scrollbar-thumb:vertical:active,  ::-webkit-scrollbar-thumb:horizontal:active {
 	background-color: rgba(0,0,0,0.51); /* Some darker color when you click it */
