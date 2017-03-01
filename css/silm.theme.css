@@ -169,7 +169,7 @@
 }
 
 #tabs .update_modifier {
-  border: .1em solid #ef9a9a !important;
+  border: 1px solid #ef9a9a !important;
   border-bottom: none !important;
 }
 
