@@ -495,9 +495,10 @@ div.reply_separator {
 }
 
 .ui-widget-content {
-	/*color: rgb(34, 34, 34);*/
-	/*color: rgb(20, 30, 34);*/
-	color: #292f33;
+  /*color: rgb(34, 34, 34);*/
+  /*color: rgb(20, 30, 34);*/
+  color: #292f33;
+  font-family: inherit;
 }
 
 .ui-tabs {
