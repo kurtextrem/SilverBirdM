@@ -430,9 +430,6 @@
   "o_extra_large": {
     "message": "特大"
   },
-  "l_font_family": {
-    "message": "フォントの種類"
-  },
   "l_show_expanded_urls": {
     "message": "短縮URLを展開する"
   },
