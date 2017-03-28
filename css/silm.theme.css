@@ -170,7 +170,7 @@
 /* #update_tweets */
 
 #tabs {
-  flex: 100 0 auto; /* flex item from #workspace */
+  /*flex: 100 0 auto; /* flex item from #workspace */
 }
 
 #tabs .timeline_tab input.search_selector {
@@ -184,7 +184,7 @@
 }
 
 .tweet_space {
-	contain: content;
+
 }
 
 .tweet {
@@ -414,13 +414,21 @@ div.reply_separator {
 
 /* override jQuery UI Structre*/
 
+.ui-tabs-nav, .tweet_space, .tweet, silm-loadingicon {
+	contain: content;
+}
+
+.timeline, .inner_timeline {
+  contain: strict;
+}
+
 .ui-tabs .ui-tabs-panel {
   padding: 0;
       margin-right: -7px;
 }
 
 .ui-tabs .ui-tabs-nav {
-  padding: .1em 0 0;
+  padding: 0;
 }
 
 .ui-tabs .ui-tabs-nav > li {
@@ -430,7 +438,7 @@ div.reply_separator {
 }
 
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
-  padding: .2em .3em .1em;
+  padding: 0.2rem;
   float: initial;
   display: block;
 }
