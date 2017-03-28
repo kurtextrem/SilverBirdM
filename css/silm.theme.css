@@ -2,7 +2,7 @@
 
 #absolute_container {
   position: absolute;
-  z-index: 999999;
+  z-index: 1000;
   left: 0;
   width: 100%;
   display: none;
@@ -47,9 +47,9 @@
 }
 
 .header_links {
-  display: flex;
-  flex-flow: row nowrap;
-  flex: 100 1 auto;
+	display: flex;
+	font-size: 0.7rem;
+	margin-top: 26px;
 }
 
 .header_link_left,
@@ -447,6 +447,7 @@ img.profile.icon_max {
 	min-width: 16px;
 	position:  absolute;
 	right:  5px;
+  max-height: 100%;
 }
 
 .tweet .new_actions > .new_actions_item {
@@ -477,13 +478,17 @@ div.reply_separator {
   width: 20px;
   height: 20px;
   text-align: center;
-  z-index: 99999;
+  z-index: 999;
 }
 
 /* override jQuery UI Structre*/
 
-.ui-tabs-nav, .tweet_space, .tweet, silm-loadingicon {
+.ui-tabs-nav, .tweet_space, .tweet, silm-loadingicon, .footer_container {
 	contain: content;
+}
+
+.pointer-events-none {
+  pointer-events: none;
 }
 
 .timeline, .inner_timeline {
@@ -627,7 +632,7 @@ div.reply_separator {
 .inReply:before {
 	content: "\e095";
 	display: inline-block;
-	transform: rotate3d(1, 0, 0, 180deg);
+	/*transform: rotate3d(1, 0, 0, 180deg);*/
 	z-index: 3;
 
 	position: relative;
