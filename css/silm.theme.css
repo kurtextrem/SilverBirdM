@@ -483,11 +483,11 @@ div.reply_separator {
 
 /* override jQuery UI Structre*/
 
-.ui-tabs-nav, .tweet_space, .tweet, silm-loadingicon, .tooltip, .timestamp, .footer_container {
+.ui-tabs-nav, .tweet_space, .tweet, silm-loadingicon, .timestamp, .footer_container, .text_container {
 	contain: content;
 }
 
-silm-composer {
+silm-composer[composed] {
   height: auto !important;
   display: block !important;
 }
