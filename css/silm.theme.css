@@ -1,44 +1,5 @@
 @import "./silm_reset.css";
 
-#absolute_container {
-  position: absolute;
-  z-index: 1000;
-  left: 0;
-  width: 100%;
-  display: none;
-}
-
-#warning {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4px;
-  display: table;
-  background-color: #e5effe;
-  border: 2px solid #b4cff2;
-  border-top: 0;
-}
-
-#warning_image {
-  display: table-cell;
-  vertical-align: middle;
-  width: 32px;
-}
-
-#warning_content {
-  margin-left: 5px;
-}
-
-#warning_dismiss {
-  float: right;
-  cursor: pointer;
-  background-color: var(--main-bg-color);
-  border: .1em solid #999;
-  width: 20px;
-  border-radius: 20px;
-  text-align: center;
-}
-
 #workspace {
   margin: 0 2px;
   min-width: 440px;
@@ -47,21 +8,26 @@
 }
 
 .header_links {
-	display: flex;
-	font-size: 0.7rem;
-	margin-top: 26px;
+  margin-top: 26px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 
 .header_link_left,
 .header_link_right {
+  flex: 1 1 auto; /* flex item from .header_links */
   display: flex;
   flex-flow: row nowrap;
-  flex: 1 1 auto;
   padding: 6px 0 2px;
 }
 
+.header_link_left {
+  justify-content: flex-start; /* flex item from .header_link_left */
+}
+
 .header_link_right {
-  justify-content: flex-end;
+  justify-content: flex-end; /* flex item from .header_link_right */
 }
 
 .header_link_left > span,
@@ -76,20 +42,8 @@
   margin: 0 2px;
 }
 
-.rotate_anime,
-#loading {
-  width: 16px;
-  height: 16px;
-  margin: 0 2px;
-  display: none;
-  animation: rotate 2s;
-  animation-iteration-count: infinite;
-  transform-origin: 6.6px 7.4px;
-}
-
-@keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.header_link_right silm-loadingicon {
+  margin: 1px 8px 2px 0;
 }
 
 .timeline div.ui-resizable-se {
@@ -110,43 +64,25 @@
 
 /* #compose_tweet_area */
 
-#shortener_area {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 2px;
-}
-
-#shortener_area input {
-  width: 100%;
-  z-index: 999;
-}
-
-#shortener_button {
-  left: calc((100% - 150px) / 2);
-  position: absolute;
-  width: 150px;
-  border-bottom-left-radius: 5px 5px;
-  border-bottom-right-radius: 5px 5px;
-  background-color: var(--main-bg-color);
-  border: 1px solid var(--main-bd-color);
-  border-top: 0px;
-  text-align: center;
-  cursor: pointer;
-  display: none;
-}
-
-#shortener_button div:hover {
-  background-color: var(--hover-bg-color);
-  border: 1px solid var(--main-bd-color);
-  border-top: 0px;
+#compose_tweet_area {
+  flex: 100 1 auto; /* flex item from silm-composer */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
 }
 
 #attach_media_area {
-  margin: 0;
-  padding: .2em 0;
+  margin: 2px 0;
+  padding: 0;
+  flex: 0 1 auto; /* flex item from #compose_tweet_area */
   display: flex;
   flex-flow: row nowrap;
-  flex: 1 1 auto;
+  justify-content: flex-start;
+}
+
+#attach_media_area silm-loadingicon {
+  margin: 4px 4px 0 0;
+  flex: 0 1 auto; /* flex item from #compose_tweet_area */
 }
 
 #tweetit,
@@ -154,14 +90,15 @@
   width: initial;
   max-width: 6em;
   margin-right: .2em;
+  flex: 0 1 auto; /* flex item from #attach_media_area */
 }
 
 #upload_previews {
   margin: 0;
   padding: 0;
+  flex: 100 1 auto; /* flex item from #attach_media_area */
   display: flex;
   flex-flow: row nowrap;
-  flex: 1 100 auto;
 }
 
 #upload_previews img {
@@ -169,22 +106,16 @@
   height: 24px;
   border-radius: .4em;
   margin: 0 .4em;
+  flex: 0 1 auto; /* flex item from #upload_previews */
 }
 
 #image_input {
   display: none;
 }
 
-#quote_tweet_url {
-  display: none;
-}
-
 #chars_left {
+  flex: 0 1 auto; /* flex item from #attach_media_area */
 }
-
-/* #compose_tweet_area */
-
-/* #compose_tweet */
 
 #tweet_text {
   width: 100%;
