@@ -10,8 +10,7 @@
 .header_links {
   margin-top: 26px;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+  font-size: 0.7rem;
 }
 
 .header_link_left,
@@ -418,7 +417,7 @@ div.reply_separator {
 	contain: content;
 }
 
-silm-composer[composed] {
+silm-composer[composed="true"] {
   height: auto !important;
   display: block !important;
 }
