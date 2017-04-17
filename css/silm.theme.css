@@ -388,6 +388,10 @@ img.profile.icon_max {
   display: none;
 }
 
+.tweet:hover .new_actions > .new_actions_item {
+	display: inline-block;
+}
+
 .tweet .new_actions > span.glyphicon-heart {
   display: inline-block;
 }
