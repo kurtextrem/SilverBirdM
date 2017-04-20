@@ -239,8 +239,9 @@
   margin: .2em .5em -0.1em 0;
 }
 
-.retweets_container > span.action_cancel_retweet:hover {
-  color: var(--main-font-color);
+.retweets_container > span.action_cancel_retweet {
+    cursor: pointer;
+    color: var(--main-font-color);
 }
 
 .main_container {
