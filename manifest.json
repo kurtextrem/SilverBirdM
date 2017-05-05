@@ -1,17 +1,17 @@
 {
-    "name": "Silverbird M",
-    "version": "0.5.9.5",
-    "manifest_version": 2,
-    "minimum_chrome_version": "56.0",
-    "description": "__MSG_extDescription__",
-    "default_locale": "en",
-    "browser_action": {
-        "default_icon": "img/icon19.png",
-        "default_title": "Silverbird M",
-        "default_popup": "popup.html?window=popup"
-    },
-    "background": {
-        "scripts": [
+	"name": "Silverbird M",
+	"version": "0.5.9.5",
+	"manifest_version": 2,
+	"minimum_chrome_version": "56.0",
+	"description": "__MSG_extDescription__",
+	"default_locale": "en",
+	"browser_action": {
+		"default_icon": "img/icon19.png",
+		"default_title": "Silverbird M",
+		"default_popup": "popup.html?window=popup"
+	},
+	"background": {
+		"scripts": [
             "lib/3rdparty/jquery.min.js",
             "lib/3rdparty/oauth.js",
             "lib/3rdparty/sha1.js",
@@ -38,39 +38,38 @@
             "lib/ComposerData.js",
             "lib/tweet_manager.js"
         ]
-    },
-    "permissions": [
+	},
+	"permissions": [
         "alarms",
         "contextMenus",
         "notifications",
         "tabs",
-        "http://*/*",
-        "https://*/*",
+        "<all_urls>",
         "webRequest",
         "webRequestBlocking"
     ],
-    "icons": {
-        "16": "img/icon16.png",
-        "48": "img/icon48.png",
-        "128": "img/icon128.png"
-    },
-    "content_security_policy": "script-src 'self'; object-src 'self'; style-src * 'self' 'unsafe-inline'; font-src * 'self';",
-    "content_scripts": [
-        {
-            "matches": [
+	"icons": {
+		"16": "img/icon16.png",
+		"48": "img/icon48.png",
+		"128": "img/icon128.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": [
                 "http://twitter.com/oauth/authorize",
                 "https://twitter.com/oauth/authorize",
                 "http://api.twitter.com/oauth/authorize",
                 "https://api.twitter.com/oauth/authorize"
             ],
-            "js": [
+			"js": [
                 "lib/oauth_authorizer.js"
             ]
         }
     ],
-    "options_page": "options.html",
-    "short_name": "__MSG_extShortName__",
-    "web_accessible_resources": [
+	"options_page": "options.html",
+	"short_name": "__MSG_extShortName__",
+	"web_accessible_resources": [
         "oauth_callback.html",
         "popup.html"
     ]
