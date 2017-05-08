@@ -2,7 +2,7 @@
 
 #workspace {
   margin: 0 2px;
-  min-width: 440px;
+  min-width: 784px;
   display: flex;
   flex-flow: column nowrap;
 }
