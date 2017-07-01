@@ -10,30 +10,11 @@
 	margin-top: 26px;
 	display: flex;
 	font-size: 0.7rem;
+	height: 28px;
 }
 
-.header_links > #update_tweets {
-	flex: 10 0 auto;
-	/* flex item from .header_links */
-	display: none;
-	font-size: 9pt;
-	font-weight: bold;
-	text-align: center;
-	margin: 3px 0;
-	cursor: pointer;
-	border: solid 1px #999;
-	border-radius: 0.4em;
-	background-color: #999;
-	color: #f4f4f4;
-	contain: content;
-}
-
-.header_links > #update_tweets:hover {
-	background-color: var(--main-bg-color);
-	color: #555;
-}
-
-.header_link_left, .header_link_right {
+.header_link_left,
+.header_link_right {
 	flex: 1 10 auto;
 	/* flex item from .header_links */
 	display: flex;
@@ -51,7 +32,8 @@
 	/* flex item from .header_link_right */
 }
 
-.header_link_left > span, .header_link_right > span {
+.header_link_left > span,
+.header_link_right > span {
 	font-size: 1em;
 	margin-right: 0.5em;
 }
@@ -63,7 +45,8 @@
 }
 
 .header_link_right silm-loadingicon {
-	margin: 1px 8px 2px 0;
+	position: relative;
+	left: -17px;
 }
 
 .timeline div.ui-resizable-se {
@@ -108,7 +91,8 @@
 	/* flex item from #compose_tweet_area */
 }
 
-#tweetit, #attach_button {
+#tweetit,
+#attach_button {
 	width: initial;
 	max-width: 6em;
 	margin-right: 0.2em;
@@ -229,18 +213,23 @@
 
 .retweets_container > span {
 	margin: 0 0.5em 0 0;
-	flex: 0 1 content;
+	flex: 0 1 auto;
 }
 
-.retweets_container > span, .retweets_container > span > a {
+.retweets_container > span,
+.retweets_container > span > a {
 	word-break: keep-all;
 	color: #999;
 }
 
-.retweets_container > span.selfRetweet, .retweets_container > span.inRetweet {
+.retweets_container > span.selfRetweet,
+.retweets_container > span.inRetweet {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
 }
 
-.retweets_container > span.inRetweet img {
+.retweets_container > span.inRetweet silm-usericon {
 	margin: 0.1em 0.5em -0.2em 0;
 }
 
@@ -265,32 +254,6 @@
 	max-width: 50%;
 }
 
-img.profile.retweeter {
-	width: 1.5em;
-	height: 1.5em;
-}
-
-img.profile.icon_small {
-	width: 24px;
-	height: 24px;
-}
-
-img.profile.icon_normal {
-	width: 48px;
-	height: 48px;
-	border-radius: 5px;
-}
-
-img.profile.icon_large {
-	width: 73px;
-	height: 73px;
-}
-
-img.profile.icon_max {
-	width: 128px;
-	height: 128px;
-}
-
 .content_container {
 	display: flex;
 	flex-flow: column nowrap;
@@ -302,20 +265,24 @@ img.profile.icon_max {
 	flex-flow: row wrap;
 }
 
-.name_container > span, .name_container > div {
+.name_container > span,
+.name_container > div {
 	margin-right: 0.5em;
 }
 
-.name_container > div.primary_name span.user, .name_container > div.primary_name a {
+.name_container > div.primary_name span.user,
+.name_container > div.primary_name a {
 	font-weight: 400;
 	font-size: 0.99em;
 }
 
-.name_container > div.secondary_name, .name_container > div.secondary_name a {
+.name_container > div.secondary_name,
+.name_container > div.secondary_name a {
 	color: #999;
 }
 
-.name_container > span.verifiedAccount, .name_container > span.protectedAccount {
+.name_container > span.verifiedAccount,
+.name_container > span.protectedAccount {
 	top: 3px;
 	left: -3px;
 	opacity: 0.5;
@@ -348,7 +315,8 @@ img.profile.icon_max {
 	order: 2;
 }
 
-.footer_container > span, .footer_container > span > a {
+.footer_container > span,
+.footer_container > span > a {
 	word-break: keep-all;
 	color: #999;
 }
@@ -362,7 +330,8 @@ img.profile.icon_max {
 	z-index: 2;
 }
 
-.footer_container > span.from_app, .footer_container > span.from_list {
+.footer_container > span.from_app,
+.footer_container > span.from_list {
 }
 
 .footer_container > span > span.glyphicon {
@@ -401,8 +370,21 @@ img.profile.icon_max {
 
 /* override jQuery UI Structre*/
 
-.ui-tabs-nav, .tweet_space, .tweet, silm-loadingicon, .timestamp, .footer_container, .text_container {
+.ui-tabs-nav,
+.tweet_space,
+.tweet,
+.timestamp,
+.footer_container,
+.text_container,
+.new_actions {
 	contain: content;
+}
+
+.timeline,
+.inner_timeline,
+.header_links,
+silm-usericon {
+	contain: strict;
 }
 
 silm-composer[composed="true"] {
@@ -414,8 +396,12 @@ silm-composer[composed="true"] {
 	pointer-events: none;
 }
 
-.timeline, .inner_timeline {
-	contain: strict;
+.header_link_right {
+	position: relative;
+}
+
+.retweets_container > span.inRetweet > a {
+	margin-left: 3px;
 }
 
 .ui-tabs .ui-tabs-panel {
@@ -453,7 +439,8 @@ silm-composer[composed="true"] {
 	overflow: hidden;
 }
 
-.ui-tooltip > .ui-tooltip-content, .ui-tooltip > .ui-tooltip-content > p {
+.ui-tooltip > .ui-tooltip-content,
+.ui-tooltip > .ui-tooltip-content > p {
 	color: white;
 	word-break: break-all;
 }
@@ -466,7 +453,8 @@ silm-composer[composed="true"] {
 	max-height: 2em;
 }
 
-.ui-tooltip > .ui-tooltip-content > img, .ui-tooltip > .ui-tooltip-content > video {
+.ui-tooltip > .ui-tooltip-content > img,
+.ui-tooltip > .ui-tooltip-content > video {
 	min-width: 100px;
 	min-height: 50px;
 	max-width: 300px;
@@ -525,11 +513,14 @@ silm-composer[composed="true"] {
 	color: #333;
 }
 
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
 	color: #555;
 }
 
-.ui-state-active, .ui-widget-header .ui-state-active {
+.ui-state-active,
+.ui-widget-header .ui-state-active {
 	border: solid 1px var(--main-bd-color);
 	background: transparent none;
 	font-weight: normal;
@@ -587,7 +578,8 @@ silm-composer[composed="true"] {
 	/*transition: background-color 1s linear;*/
 }
 
-::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
 	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 100px;
 	background-clip: padding-box;
@@ -595,7 +587,8 @@ silm-composer[composed="true"] {
 	min-height: 30px;
 }
 
-::-webkit-scrollbar-thumb:vertical:active, ::-webkit-scrollbar-thumb:horizontal:active {
+::-webkit-scrollbar-thumb:vertical:active,
+::-webkit-scrollbar-thumb:horizontal:active {
 	background-color: rgba(0, 0, 0, 0.51);
 	/* Some darker color when you click it */
 	border-radius: 100px;

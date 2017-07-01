@@ -1,172 +1,180 @@
 :root {
-  --main-font-color: #292f33;
-  --main-bg-color: #f4f4f4;
-  --main-bd-color: #c5c5c5;
-  --hover-bg-color: #ededed;
-  --silm-main-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Japanese", "Roboto", Helvetica, Arial, sans-serif;
-  --silm-emoji-fonts: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Noto Emoji", Symbola;
+	--main-font-color: #292f33;
+	--main-bg-color: #f4f4f4;
+	--main-bd-color: #c5c5c5;
+	--hover-bg-color: #ededed;
+	--silm-main-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Japanese", "Roboto", Helvetica, Arial, sans-serif;
+	--silm-emoji-fonts: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Noto Emoji", Symbola;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  color: var(--main-font-color);
-  font-family: var(--slim-main-fonts), var(--silm-emoji-fonts) !important;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.5;
-  overflow: hidden;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	color: var(--main-font-color);
+	font-family: var(--slim-main-fonts), var(--silm-emoji-fonts) !important;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+*,
+:before,
+:after {
+	box-sizing: border-box;
 }
 
 a {
-  color: #665;
-  text-decoration: none;
+	color: #665;
+	text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 input[type='text'] {
-  margin: 0;
-  border-radius: .4em;
-  border: 1px solid var(--main-bd-color);
-  line-height: 1.3;
+	margin: 0;
+	border-radius: .4em;
+	border: 1px solid var(--main-bd-color);
+	line-height: 1.3;
 }
 
 /* copy from Bootstrap */
 @font-face {
-  font-family: 'Glyphicons Halflings';
+	font-family: 'Glyphicons Halflings';
 
-  src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('./bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('./bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+	src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot');
+	src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+		url('./bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('./bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+		url('./bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings' !important;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings' !important;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
 
-  -webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 .glyphicon-plus:before {
-  content: "\2b";
+	content: "\2b";
 }
 .glyphicon-minus:before {
-  content: "\2212";
+	content: "\2212";
 }
 .glyphicon-envelope:before {
-  content: "\2709";
+	content: "\2709";
 }
 .glyphicon-search:before {
-  content: "\e003";
+	content: "\e003";
 }
 .glyphicon-heart:before {
-  content: "\e005";
+	content: "\e005";
 }
 .glyphicon-heart-empty:before {
-  content: "\e143";
-  color: var(--main-font-color);
+	content: "\e143";
+	color: var(--main-font-color);
 }
 .glyphicon-heart-empty:hover:before {
-  color: #E81C4F;
+	color: #e81c4f;
 }
 .glyphicon-ok:before {
-  content: "\e013";
+	content: "\e013";
 }
 .glyphicon-remove:before {
-  content: "\e014";
+	content: "\e014";
 }
 .glyphicon-cog:before {
-  content: "\e019";
+	content: "\e019";
 }
 .glyphicon-trash:before {
-  content: "\e020";
+	content: "\e020";
 }
 .glyphicon-repeat:before {
-  content: "\e030";
+	content: "\e030";
 }
 .glyphicon-refresh:before {
-  content: "\e031";
+	content: "\e031";
 }
 .glyphicon-lock:before {
-  content: "\e033";
+	content: "\e033";
 }
 .glyphicon-map-marker:before {
-  content: "\e062";
+	content: "\e062";
 }
 .glyphicon-check:before {
-  /*content: "\e067";*/
-  content: "\e084";
+	/*content: "\e067";*/
+	content: "\e084";
 }
 .glyphicon-play:before {
-  content: "\e072";
+	content: "\e072";
 }
 .glyphicon-pause:before {
-  content: "\e073";
+	content: "\e073";
 }
 .glyphicon-stop:before {
-  content: "\e074";
+	content: "\e074";
 }
 .glyphicon-forward:before {
-  content: "\e075";
+	content: "\e075";
 }
 .glyphicon-eject:before {
-  content: "\e078";
+	content: "\e078";
 }
 .glyphicon-remove-sign:before {
-  content: "\e083";
+	content: "\e083";
 }
 .glyphicon-ok-sign:before {
-  content: "\e084";
+	content: "\e084";
 }
 .glyphicon-remove-circle:before {
-  content: "\e088";
+	content: "\e088";
 }
 .glyphicon-ok-circle:before {
-  content: "\e089";
+	content: "\e089";
 }
 .glyphicon-ban-circle:before {
-  content: "\e090";
+	content: "\e090";
 }
 .glyphicon-share-alt:before {
-  content: "\e095";
+	content: "\e095";
 }
 .glyphicon-reply:before {
-  content: "\e095";
-  display: inline-block;
-  transform: rotate(180deg);
+	content: "\e095";
+	display: inline-block;
+	transform: rotate(180deg);
 }
 .glyphicon-comment:before {
-  content: "\e111";
+	content: "\e111";
 }
 .glyphicon-retweet:before {
-  content: "\e115";
+	content: "\e115";
 }
 .glyphicon-link:before {
-  content: "\e144";
+	content: "\e144";
 }
 .glyphicon-sort-by-attributes:before {
-  content: "\e155";
+	content: "\e155";
 }
 .glyphicon-trends:before {
-  content: "\e155";
-  display: inline-block;
-  transform: rotate(-90deg);
+	content: "\e155";
+	display: inline-block;
+	transform: rotate(-90deg);
 }
 .glyphicon-log-out:before {
-  content: "\e163";
+	content: "\e163";
 }
 .glyphicon-menu-hamburger:before {
-  content: "\e236";
+	content: "\e236";
 }
 .glyphicon-menu-down:before {
-  content: "\e259";
+	content: "\e259";
 }
 .glyphicon-menu-up:before {
-  content: "\e260";
+	content: "\e260";
 }
