@@ -1,9 +1,11 @@
 @import "./silm_reset.css";
+
 #workspace {
 	margin: 0 2px;
 	min-width: 784px;
 	display: flex;
 	flex-flow: column nowrap;
+	z-index: 1;
 }
 
 .header_links {
@@ -63,6 +65,8 @@
 	overflow: auto;
 	overflow-x: hidden;
 	position: relative;
+	/* will-change: transform; /* improves rendering a lot, but blurs text */
+	z-index: 2;
 }
 
 /* #compose_tweet_area */
@@ -558,6 +562,7 @@ silm-composer[composed="true"] {
 	width: 8px;
 	background-color: rgba(0, 0, 0, 0);
 	border-radius: 100px;
+	contain: strict;
 	/*transition: background-color 1s linear;*/
 }
 
