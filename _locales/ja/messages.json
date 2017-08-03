@@ -31,14 +31,11 @@
     "message": "リロード",
     "description": "再読み込みへのリンク"
   },
-  "suspend_status": {
-    "message": "クリックで更新再開"
-  },
   "timeline_running": {
-    "message": "クリックで更新停止"
+    "message": "タイムライン稼働中"
   },
   "timeline_suspended": {
-    "message": "クリックで更新再開"
+    "message": "タイムライン停止中"
   },
   "remove_tab": {
     "message": "このタブを削除"
@@ -752,14 +749,11 @@
   "d_restart_immediately": {
     "message": "ただちに再起動"
   },
-  "stream_status": {
-    "message": "UserStreamに接続する"
-  },
   "stream_disconnected": {
-    "message": "UserStreamに接続する"
+    "message": "UserStream切断済み"
   },
   "stream_connected": {
-    "message": "UserStreamから切断する"
+    "message": "UserStream接続中"
   },
   "worldwide": {
     "message": "ワールドワイド"
