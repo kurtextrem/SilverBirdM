@@ -1,4 +1,4 @@
-const SilM_WorkerVersion = 4
+const SilM_WorkerVersion = 5
 const SilM_CacheName = `SilverbirdM_Cache_Version${SilM_WorkerVersion}`
 
 self.addEventListener('install', event => {
@@ -34,7 +34,7 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
 	const url = event.request.url
-	if (url.includes('chrome-extension://') || url.includes('.twitter.com') || event.request.method !== 'GET' || url.includes('.twimg.com')) {
+	if (url.includes('chrome-extension://') || url.includes('.twitter.com') || event.request.method !== 'GET' || url.includes('twimg.com')) {
 		return
 	}
 	event.respondWith(
