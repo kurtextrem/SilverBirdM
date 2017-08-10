@@ -1,8 +1,8 @@
 @import "./silm_reset.css";
 
 #workspace {
-	margin: 0 2px;
-	min-width: 784px;
+	margin: 0 1px;
+	min-width: 798px;
 	display: flex;
 	flex-flow: column nowrap;
 	z-index: 1;
@@ -12,7 +12,7 @@
 	margin-top: 26px;
 	display: flex;
 	flex-flow: row nowrap;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	height: 28px;
 }
 
@@ -34,7 +34,6 @@
 
 .header_link_left > span,
 .header_link_right > span {
-	font-size: 16px;
 }
 
 .header_link_left > span {
@@ -42,7 +41,7 @@
 	cursor: pointer;
 }
 
-.header_link_left #twitter_link {
+#twitter_link {
 	width: 16px;
 	height: 16px;
 	background-image: url("../img/twitter-bird-16x16.png");
@@ -81,6 +80,8 @@ silm-composer {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-end;
+	font-size: 13px;
+	margin-left: 1px;
 }
 
 #tweet_text {
