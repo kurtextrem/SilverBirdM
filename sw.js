@@ -75,9 +75,10 @@ self.addEventListener('message', event => {
 })
 
 async function doPreload(url) {
+	if (url.indexOf('http') === -1) return
 	try {
 		const cache = await caches.open(SilM_CacheName)
-		cache.add(new URL(url))
+		await cache.add(new URL(url))
 		return `cached: ${url}`
 	} catch (e) {
 		return e

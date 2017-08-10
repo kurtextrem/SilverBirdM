@@ -482,7 +482,7 @@
     "message": "短縮URL"
   },
   "l_url_shortener": {
-    "message": "短縮URLプロバイダ"
+    "message": "短縮URLプロバイダ (廃止予定)"
   },
   "l_share_include_title": {
     "message": "共有対象のページタイトルを含める"
@@ -606,7 +606,7 @@
   "updateLists": {
     "message": "リスト更新"
   },
-  "view_twitter": {
+  "twitter_link": {
     "message": "Twitterで見る"
   },
   "l_use_keyboard_shortcuts": {

@@ -482,7 +482,7 @@
     "message": "Shortener"
   },
   "l_url_shortener": {
-    "message": "URL Shortener"
+    "message": "URL Shortener (deprecated)"
   },
   "l_share_include_title": {
     "message": "Include page title (sharing)"
@@ -606,7 +606,7 @@
   "updateLists": {
     "message": "Update Lists"
   },
-  "view_twitter": {
+  "twitter_link": {
     "message": "View Twitter.com"
   },
   "l_use_keyboard_shortcuts": {
