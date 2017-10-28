@@ -282,6 +282,8 @@ silm-shortener.disabled,
 .name_container {
 	display: flex;
 	flex-flow: row wrap;
+	height: 22px;
+	contain: strict;
 }
 
 .name_container > span,
@@ -304,12 +306,6 @@ silm-shortener.disabled,
 	display: inline-flex;
 	flex-flow: row nowrap;
 	align-items: center;
-}
-
-.glyphicon-ok-sign:before {
-	color: #77c7f7;
-	background-color: white;
-	border-radius: 50%;
 }
 
 .text_container {
