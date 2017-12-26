@@ -31,12 +31,6 @@
     "message": "リロード",
     "description": "再読み込みへのリンク"
   },
-  "timeline_running": {
-    "message": "タイムライン稼働中"
-  },
-  "timeline_suspended": {
-    "message": "タイムライン停止中"
-  },
   "remove_tab": {
     "message": "このタブを削除"
   },
@@ -166,8 +160,8 @@
   "newToken": {
     "message": "違うトークンをリクエスト"
   },
-  "shortenerIdleString": {
-    "message": "短縮したいURLを入力してください。この欄を選択するとサジェストします。"
+  "attach_url_idle": {
+    "message": "添付したいURLを入力してください。この欄を選択するとサジェストします。"
   },
   "tweet_singular": {
     "message": "更新"
@@ -478,12 +472,6 @@
   "l_notification_fade_timeout": {
     "message": "通知のタイムアウト (秒)"
   },
-  "g_shortener": {
-    "message": "短縮URL"
-  },
-  "l_url_shortener": {
-    "message": "短縮URLプロバイダ (廃止予定)"
-  },
   "l_share_include_title": {
     "message": "共有対象のページタイトルを含める"
   },
@@ -538,8 +526,8 @@
   "btn_default_text": {
     "message": "初期化"
   },
-  "shortener_button": {
-    "message": "URLを短くする"
+  "attach_url_button": {
+    "message": "URLを添付する"
   },
   "tweet_send_error": {
     "message": "ツイート中にエラーが発生しました。文字数を超過しているか、同じ文面のツイートをしていないか確かめてからやり直してみてください。"
@@ -862,9 +850,6 @@
   },
   "ue_already_retweeting": {
     "message": "すでにリツイートしてあります"
-  },
-  "o_no_shorten": {
-    "message": "短縮しない"
   },
   "n_done_retweet": {
     "message": "リツイートしました。"

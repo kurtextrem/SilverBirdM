@@ -31,12 +31,6 @@
     "message": "Refresh",
     "description": "Refresh link"
   },
-  "timeline_running": {
-    "message": "Timeline is running"
-  },
-  "timeline_suspended": {
-    "message": "Timeline is suspended"
-  },
   "remove_tab": {
     "message": "Remove This Tab"
   },
@@ -166,8 +160,8 @@
   "newToken": {
     "message": "Request another token"
   },
-  "shortenerIdleString": {
-    "message": "Type a URL to make it shorter, or, click here to suggest URL"
+  "attach_url_idle": {
+    "message": "Type a URL to attach, or, click here to suggest URL"
   },
   "tweet_singular": {
     "message": "tweet"
@@ -478,12 +472,6 @@
   "l_notification_fade_timeout": {
     "message": "Notification Timeout (s)"
   },
-  "g_shortener": {
-    "message": "Shortener"
-  },
-  "l_url_shortener": {
-    "message": "URL Shortener (deprecated)"
-  },
   "l_share_include_title": {
     "message": "Include page title (sharing)"
   },
@@ -538,8 +526,8 @@
   "btn_default_text": {
     "message": "Reset to default"
   },
-  "shortener_button": {
-    "message": "Shorten it!"
+  "attach_url_button": {
+    "message": "attach URL"
   },
   "tweet_send_error": {
     "message": "An error occurred while trying to send your tweet. Maybe Twitter is acting weird? You can try it again but please double check your account to prevent duplicated messages or overcount Twitter Max words."
@@ -862,9 +850,6 @@
   },
   "ue_already_retweeting": {
     "message": "You have already retweeted this tweet."
-  },
-  "o_no_shorten": {
-    "message": "No Shorten"
   },
   "n_done_retweet": {
     "message": "Retweeted."
