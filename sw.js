@@ -66,7 +66,7 @@ self.addEventListener('message', event => {
 	}
 	switch (true) {
 		case event.data.request === 'preload' && Boolean(event.data.url):
-			doPreload(event.data.url)
+			//doPreload(event.data.url)
 			break
 		default:
 			console.info(`sw:message: %o`, event)
