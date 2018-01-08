@@ -497,11 +497,11 @@ silm-composer[composed="true"] {
 	line-height: 1.6;
 }
 
-.ui-widget-content {
+.ui-widget-content, .ui-widget {
 	/*color: rgb(34, 34, 34);*/
 	/*color: rgb(20, 30, 34);*/
 	color: #292f33;
-	font-family: inherit;
+	font-family: var(--slim-main-fonts), var(--silm-emoji-fonts) !important;
 }
 
 .ui-tabs {
