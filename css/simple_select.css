@@ -20,7 +20,8 @@ div.simple_select .label {
 div.simple_select .options_area {
   display: none;
   position: absolute;
-  overflow: hidden;
+  overflow: visible;
+  contain: paint;
   z-index: 99999;
   border: 1px solid #D9D9D9;
   background-color: #FFFFFF;
