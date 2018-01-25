@@ -284,7 +284,6 @@ silm-shortener.disabled,
 	display: flex;
 	flex-flow: row wrap;
 	height: 22px;
-	contain: strict;
 }
 
 .name_container > span,
@@ -391,13 +390,18 @@ silm-shortener.disabled,
 .timestamp,
 .footer_container,
 .text_container,
-.new_actions {
+.new_actions,
+.tweet_overlay
+.icon_container,
+.main_container,
+.content_container {
 	contain: content;
 }
 
 .timeline,
 .inner_timeline,
 .header_links,
+.name_container
 silm-usericon {
 	contain: strict;
 }
