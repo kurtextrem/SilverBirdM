@@ -32,7 +32,7 @@ self.addEventListener('activate', event => {
 	)
 })
 
-self.addEventListener('fetch', event => {
+/*self.addEventListener('fetch', event => {
 	const url = event.request.url
 	if (url.includes('chrome-extension://') || url.includes('.twitter.com') || event.request.method !== 'GET' || url.includes('twimg.com')) {
 		return
@@ -47,7 +47,7 @@ self.addEventListener('fetch', event => {
 					}
 					return fetch(event.request.clone()).then(response => {
 						if (response.ok) {
-							cache.put(event.request, response.clone())
+							//cache.put(event.request, response.clone())
 						}
 						return response
 					})
@@ -58,7 +58,7 @@ self.addEventListener('fetch', event => {
 			})
 	)
 	//console.info(`sw:fetch: %o`, event);
-})
+})*/
 
 self.addEventListener('message', event => {
 	if (!event.data) {
