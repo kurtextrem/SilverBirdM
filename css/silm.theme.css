@@ -1,4 +1,4 @@
-@import "./silm_reset.css";
+@import './silm_reset.css';
 
 #workspace {
 	margin: 0 1px;
@@ -37,18 +37,18 @@
 }
 
 .header_link_left > span {
-	margin-right: .2em;
+	margin-right: 0.2em;
 	cursor: pointer;
 }
 
 #twitter_link {
 	width: 16px;
 	height: 16px;
-	background-image: url("../img/twitter-bird-16x16.png");
+	background-image: url('../img/twitter-bird-16x16.png');
 }
 
 .header_link_right > * {
-	margin-left: .2em;
+	margin-left: 0.2em;
 }
 
 .timeline div.ui-resizable-se {
@@ -65,7 +65,7 @@
 	overflow: auto;
 	overflow-x: hidden;
 	position: relative;
-	/* will-change: transform; /* improves rendering a lot, but blurs text */
+	will-change: contents;
 	z-index: 2;
 }
 
@@ -172,7 +172,7 @@ silm-shortener.disabled,
 	transition-property: opacity;
 	transition-duration: 100ms;
 	transition-timing-function: ease-out;
-	opacity: .3;
+	opacity: 0.3;
 }
 
 /* composer */
@@ -391,8 +391,7 @@ silm-shortener.disabled,
 .footer_container,
 .text_container,
 .new_actions,
-.tweet_overlay
-.icon_container,
+.tweet_overlay .icon_container,
 .main_container,
 .content_container {
 	contain: content;
@@ -401,12 +400,11 @@ silm-shortener.disabled,
 .timeline,
 .inner_timeline,
 .header_links,
-.name_container
-silm-usericon {
+.name_container silm-usericon {
 	contain: strict;
 }
 
-silm-composer[composed="true"] {
+silm-composer[composed='true'] {
 	height: auto !important;
 	display: block !important;
 }
@@ -503,7 +501,8 @@ silm-composer[composed="true"] {
 	line-height: 1.6;
 }
 
-.ui-widget-content, .ui-widget {
+.ui-widget-content,
+.ui-widget {
 	/*color: rgb(34, 34, 34);*/
 	/*color: rgb(20, 30, 34);*/
 	color: #292f33;
@@ -562,7 +561,7 @@ silm-composer[composed="true"] {
 }
 
 .inReply::before {
-	content: "reply";
+	content: 'reply';
 	display: inline-block;
 	/*transform: rotate3d(2, 0, 180, 180deg);*/
 	z-index: 3;
