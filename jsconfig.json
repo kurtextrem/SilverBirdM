@@ -1,13 +1,15 @@
 {
 	"compilerOptions": {
-		"target": "ES6",
+		"target": "ESNext",
+		"jsx": "preserve",
 		"experimentalDecorators": true,
-		"allowSyntheticDefaultImports": true,
 		"checkJs": true,
-		"jsx": "preserve"
+		"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./",
+		"paths": {
+			"**/*": ["**/*"]
+		}
 	},
-	"exclude": [
-		"node_modules",
-		"dist"
-	]
+	"exclude": ["dist"]
 }
