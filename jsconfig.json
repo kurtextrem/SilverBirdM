@@ -1,12 +1,12 @@
 {
 	"compilerOptions": {
 		"target": "ESNext",
-		"jsx": "preserve",
+		"jsx": "react",
 		"experimentalDecorators": true,
 		"checkJs": true,
 		"forceConsistentCasingInFileNames": true,
 		"allowSyntheticDefaultImports": true,
-		"baseUrl": "./",
+		"baseUrl": ".",
 		"paths": {
 			"**/*": ["**/*"]
 		}
